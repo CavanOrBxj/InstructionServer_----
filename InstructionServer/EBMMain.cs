@@ -96,14 +96,10 @@ namespace InstructionServer
             try
             {
                 InitializeComponent();
-              //  AdminAccount = true;
                 CheckIniConfig();
                 InitConfig();
-
-                //  OpenScramblerDevice();
                 IsStartStream = false;
                 EbmStream = new EBMStream();
-
                 MenuItemTSSetting_Click(MenuItemTSSetting, EventArgs.Empty);
                 formStreamSet.WindowState = FormWindowState.Minimized;
 
@@ -198,7 +194,6 @@ namespace InstructionServer
             }
             catch (Exception ex)
             {
-
                 LogHelper.WriteLog(typeof(EBMMain), ex.ToString());
             }
         
@@ -1942,7 +1937,7 @@ namespace InstructionServer
                 List<EBIndex> listEbIndex = dataHelper.GetSendEBMIndex(_EBMIndexGlobal.ListEbIndex);
                 oldTable.ListEbIndex = listEbIndex;
               //  oldTable.Repeat_times = _EBMIndexGlobal.Repeat_times;
-                oldTable.Repeat_times = 0;
+                oldTable.Repeat_times = 0;//重复发送
                 return true;
             }
             catch
