@@ -1,0 +1,1275 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "EBMTableLib"
+    </assembly>
+    <members>
+        <member name="F:EBMTable.EBIndex.list_ProgramStreamInfo">
+            <summary>
+详情频道节目流信息列表
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.DetlChlDescriptor">
+            <summary>
+详情频道描述符
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.S_details_channel_PCR_PID">
+            <summary>
+详情频道PCR_PID
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.S_details_channel_program_number">
+            <summary>
+节目号
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.S_details_channel_transport_stream_id">
+            <summary>
+传输流标识符 0-65535
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.BL_details_channel_indicate">
+            <summary>
+详情频道有无标识
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.List_EBM_resource_code">
+            <summary>
+应急广播消息覆盖资源代码，18位数字
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.S_EBM_level">
+            <summary>
+应急广播消息级别
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.S_EBM_class">
+            <summary>
+应急广播消息分类
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.S_EBM_type">
+            <summary>
+应急广播消息类别,5个ASCII字符
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.S_EBM_end_time">
+            <summary>
+应急广播消息结束时间
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.S_EBM_start_time">
+            <summary>
+应急广播消息开始时间
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.S_EBM_original_network_id">
+            <summary>
+应急广播原始网络标识符，0-65535
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndex.S_EBM_id">
+            <summary>
+应急广播消息标识符,30位数字
+</summary>
+        </member>
+        <member name="M:EBMTable.EBIndexTable.GetEBIndexSectionPackages(System.Int32*)">
+            <summary>
+获取应急广播索引表数据
+<param name="PackageNum">输入输出参数，数据长度指针</param><returns>返回值，二进制分段数据</returns></summary>
+        </member>
+        <member name="M:EBMTable.EBIndexTable.BuildEbIndexSection">
+            <summary>
+创建应急广播索引表数据分段
+</summary>
+        </member>
+        <member name="M:EBMTable.EBIndexTable.GetEbIndexSection(System.Int32@)">
+            <summary>
+获取当前应急广播索引表Section数据 
+<param name="SecnLen">输入输出参数，数据长度指针</param><returns>返回值，二进制分段数据</returns></summary>
+        </member>
+        <member name="M:EBMTable.EBIndexTable.Initialization(StreamConfig*,EBMTable.SignatureCallBackDelegate)">
+            <summary>
+数字签名回调委托,需要签名时必须用相应签名函数进行初始化 
+</summary>
+            <summary>
+初始化函数，必须在设置必要的属性后调用 
+<param name="ts_config">输入参数，TS流配置参数结构体</param><param name="SignatureCallback">输入参数，数字签名回调委托</param><returns /></summary>
+        </member>
+        <member name="P:EBMTable.EBIndexTable.Completed">
+            <summary>
+应急广播表是否已经完成发送，为true时表示已经完成发送。
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndexTable.Repeat_count">
+            <summary>
+应急广播表已经发送次数计数。
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndexTable.Repeat_times">
+            <summary>
+应急广播表重复发送的次数，为0表示一直重复发送。设置该属性将引发计数清零，重新开发发送数据
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndexTable.Table_id_extension">
+            <summary>
+扩展子表id 
+</summary>
+        </member>
+        <member name="P:EBMTable.EBIndexTable.Table_id">
+            <summary>
+索引表主表id 
+</summary>
+        </member>
+        <member name="F:EBMTable.EBIndexTable.ListEbIndex">
+            <summary>
+应急广播索引数据列表，基本单位为EBIndex对像
+</summary>
+        </member>
+        <member name="M:EBMTable.EBMStream.StreamInit">
+            <summary>
+传送流初始化，调用此函数会创建传送流线程，传送流线程只可创建一个
+</summary>
+        </member>
+        <member name="M:EBMTable.EBMStream.StreamDispos">
+            <summary>
+删除传送流，调用此函数会关闭传送流线程
+</summary>
+        </member>
+        <member name="M:EBMTable.EBMStream.SetDataLoad(System.Byte[],System.Int32)">
+            <summary>
+通过此函数可添加自定议TS数据包用于通过TS流发送，注意数据包必须符合ISO13818-1中关于传送流的规范，否则将破坏传送流
+<param name="pLoad">输入参数，待发送二制制数据</param><param name="Len">输入参数，数据度，必须为188的整数倍</param></summary>
+        </member>
+        <member name="M:EBMTable.EBMStream.SetDataLoad(System.Byte*,System.Int32)">
+            <summary>
+通过此函数可添加自定议TS数据包用于通过TS流发送，注意数据包必须符合ISO13818-1中关于传送流的规范，否则将破坏传送流
+<param name="pLoad">输入参数，待发送二制制数据</param><param name="Len">输入参数，数据度，必须为188的整数倍</param></summary>
+        </member>
+        <member name="M:EBMTable.EBMStream.StopStreaming">
+            <summary>
+调用此函数将停止TS流发送
+</summary>
+        </member>
+        <member name="M:EBMTable.EBMStream.StartStreaming">
+            <summary>
+调用此函数将启动TS流发送
+</summary>
+        </member>
+        <member name="M:EBMTable.EBMStream.Initialization">
+            <summary>
+需要在设置各项参数后调用此函数进行对像初始化，创建传送流线程，以便使网络及其它资源可用
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.SignatureCallbackRef">
+            <summary>
+数字签名回调委托,需要签名时必须用相应签名函数进行初始化 
+</summary>
+        </member>
+        <member name="P:EBMTable.EBMStream.sLocalSockAddress">
+            <summary>
+本地IP地址
+</summary>
+        </member>
+        <member name="P:EBMTable.EBMStream.sDestSockAddress">
+            <summary>
+传送流目标IP地址
+</summary>
+        </member>
+        <member name="P:EBMTable.EBMStream.Stream_BitRate">
+            <summary>
+传送流码率
+</summary>
+        </member>
+        <member name="P:EBMTable.EBMStream.Section_length">
+            <summary>
+分段最大长度
+</summary>
+        </member>
+        <member name="P:EBMTable.EBMStream.PMT_Pid">
+            <summary>
+节目映射表pid
+</summary>
+        </member>
+        <member name="P:EBMTable.EBMStream.Program_id">
+            <summary>
+节目id
+</summary>
+        </member>
+        <member name="P:EBMTable.EBMStream.Stream_id">
+            <summary>
+流id
+</summary>
+        </member>
+        <member name="P:EBMTable.EBMStream.ElementaryPid">
+            <summary>
+基础pid
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.Daily_Broadcast_Table">
+            <summary>
+日常广播指令表数据对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.EB_Configure_Table">
+            <summary>
+应急广播配置表数据对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.EB_CertAuth_Table">
+            <summary>
+应急广播证书授权表数据对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.EB_Content_Table">
+            <summary>
+应急广播内容表数据对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.EB_Index_Table">
+            <summary>
+应急广播索引表数据对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.Log">
+            <summary>
+日志对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.DataCallBack">
+            <summary>
+数据回调委托
+</summary>
+        </member>
+        <member name="M:EBMTable.EBMStream.DataStreaming">
+            <summary>
+将当前应急广播索引表Section数据写入低层流传送对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.ebm_stream">
+            <summary>
+传送流对像指针
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.S_localSockAddress">
+            <summary>
+本地IP地址
+</summary>
+        </member>
+        <member name="F:EBMTable.EBMStream.S_destSockAddress">
+            <summary>
+传送流目标IP地址
+</summary>
+        </member>
+        <member name="M:EBMTable.DailyCmdRdsTransfer.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdRdsTransfer.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdRdsTransfer.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdRdsTransfer.B_Rds_terminal_type">
+            <summary>
+1：应急广播适配器;2：收扩机;	3：音柱;4：应急广播适配器 + 收扩机;	+ 音柱;	4~9：保留
+</summary>
+        </member>
+        <member name="M:EBMTable.DailyCmdOutSwitch.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdOutSwitch.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdOutSwitch.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdOutSwitch.B_Switch_status">
+            <summary>
+1：表示关闭输出 2：表示开启输出
+</summary>
+        </member>
+        <member name="M:EBMTable.DailyCmdPlayCtrl.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdPlayCtrl.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdPlayCtrl.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdPlayCtrl.Volume">
+            <summary>
+音量按百分比形式标识，其中：0x00 ：静音,0xff ：开播，音量不变,0x01 -0x64: 对应音量1% -100%,其它取值无意义
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdPlayCtrl.B_cmd_tag">
+            <summary>
+播放控制指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.DailyCmdPlayCtrl">
+            <summary>
+播放控制指令
+</summary>
+        </member>
+        <member name="M:EBMTable.DailyCmdProgramStop.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdProgramStop.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdProgramStop.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdProgramStop.Program_PID">
+            <summary>
+带有当前音频节目内容的 TS流PID
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdProgramStop.PCR_PID">
+            <summary>
+PCR pid
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdProgramStop.ServiceID">
+            <summary>
+Program service id 
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdProgramStop.TSID">
+            <summary>
+传输流ID
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdProgramStop.NetID">
+            <summary>
+源始网络标识
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdProgramStop.B_cmd_tag">
+            <summary>
+节目停目指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.DailyCmdProgramStop">
+            <summary>
+节目停目指令
+</summary>
+        </member>
+        <member name="M:EBMTable.DailyCmdChangeProgram.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址*/
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.EndTime">
+            <summary>
+日常广播结束时间
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.Volume">
+            <summary>
+*音量按百分比形式标识，其中：0x00：静音, 0xff：开播，音量不变，0x01 -0x64：对应音量1% -100%
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.Priority">
+            <summary>
+节目优先级
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.Program_PID">
+            <summary>
+带有当前音频节目内容的 TS流PID*/
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.PCR_PID">
+            <summary>
+PCR pid
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.ServiceID">
+            <summary>
+Program service id 
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.TSID">
+            <summary>
+传输流ID
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.NetID">
+            <summary>
+源始网络标识
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyCmdChangeProgram.B_cmd_tag">
+            <summary>
+节目切播指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.DailyCmdChangeProgram">
+            <summary>
+节目切播指令
+</summary>
+        </member>
+        <member name="M:EBMTable.DailyBroadcastTable.Initialization(StreamConfig*,EBMTable.SignatureCallBackDelegate)">
+            <summary>
+初始化日常广播指令表
+<param name="ts_config">输入参数，TS流配置参数结构体</param><param name="SignatureCallback">输入参数，数字签名回调委托</param></summary>
+        </member>
+        <member name="M:EBMTable.DailyBroadcastTable.GetDailyBroadcastSection(System.Int32@)">
+            <summary>
+获取日常广播数据分段
+<param name="PackageNum">输入输出参数，数据长度引用</param><returns>返回值，二进制分段数据</returns></summary>
+        </member>
+        <member name="M:EBMTable.DailyBroadcastTable.GetDailyBroadcastSectionPackages(System.Int32*)">
+            <summary>
+获取日常广播指令数据分段
+<param name="PackageNum">输入输出参数，数据长度指针</param><returns>返回值，二进制分段数据</returns></summary>
+        </member>
+        <member name="M:EBMTable.DailyBroadcastTable.BuildDailyBroadcastSection">
+            <summary>
+创建日常广播指令数据分段
+</summary>
+        </member>
+        <member name="P:EBMTable.DailyBroadcastTable.Completed">
+            <summary>
+应急广播表是否已经完成发送，为true时表示已经完成发送。
+</summary>
+        </member>
+        <member name="P:EBMTable.DailyBroadcastTable.Repeat_count">
+            <summary>
+应急广播表已经发送次数计数。
+</summary>
+        </member>
+        <member name="P:EBMTable.DailyBroadcastTable.Repeat_times">
+            <summary>
+应急广播表重复发送的次数，为0表示一直重复发送。设置该属性将引发计数清零，重新开发发送数据
+</summary>
+        </member>
+        <member name="P:EBMTable.DailyBroadcastTable.Table_id_extension">
+            <summary>
+扩展子表id 
+</summary>
+        </member>
+        <member name="P:EBMTable.DailyBroadcastTable.Table_id">
+            <summary>
+索引表主表id 
+</summary>
+        </member>
+        <member name="F:EBMTable.DailyBroadcastTable.list_daily_cmd">
+            <summary>
+日常广播指令数据列表
+</summary>
+        </member>
+        <member name="F:EBMSection.DailyBroadcastSection.Repeat_times">
+            <summary>
+应急广播表重复发送的次数，为0表示一直重复发送。
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureStatusRetback.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureStatusRetback.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureStatusRetback.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址*/
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureStatusRetback.list_Parameter_tag">
+            <summary>
+查询终端工作状态参数标签列表
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureStatusRetback.B_cmd_tag">
+            <summary>
+查询终端工作状态指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConfigureStatusRetback">
+            <summary>
+查询终端工作状态指令类
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureContentRealMoniter.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentRealMoniter.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentRealMoniter.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址*/
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentRealMoniter.S_Server_addr">
+            <summary>
+服务器地址含端口。
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentRealMoniter.Moniter_time_duration">
+            <summary>
+监听时长，32位整数，单位为秒。
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentRealMoniter.Retback_mode">
+            <summary>
+回传方式，1-6：保留；7：使用基于UDP的RTP协议发送；8：使用基于TCP的RTP协议发送；9：使用基于UDP的RTSP协议发送；10：使用基于TCP的RTSP协议发送
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentRealMoniter.S_EBM_id">
+            <summary>
+应急广播事件ID，格式同应急广播消息ID
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentRealMoniter.B_cmd_tag">
+            <summary>
+启动内容监测实时监听指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConfigureContentRealMoniter">
+            <summary>
+启动内容监测实时监听指令类
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureContentMoniterRetback.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentMoniterRetback.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentMoniterRetback.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址*/
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentMoniterRetback.Start_package_index">
+            <summary>
+起始传输包的序号，终端文件回传过程支持断点续传功能
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentMoniterRetback.S_File_id">
+            <summary>
+要回传的文件ID（文件名）
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentMoniterRetback.Retback_mode">
+            <summary>
+回传方式，1：音频数据使用本协议专用格式封装，使用TCP协议发送；2：保留；	3. 保留；4：使用FTP协议发送；5：使用P2P协议发送；
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentMoniterRetback.S_EBM_id">
+            <summary>
+应急广播事件ID，格式同应急广播消息ID
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureContentMoniterRetback.B_cmd_tag">
+            <summary>
+启动内容监测回传指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConfigureContentMoniterRetback">
+            <summary>
+启动内容监测回传指令类
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureRebackPeriod.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureRebackPeriod.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureRebackPeriod.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址*/
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureRebackPeriod.reback_period">
+            <summary>
+回传周期统一换算为秒，1天=86400 秒，86400
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureRebackPeriod.B_cmd_tag">
+            <summary>
+设置回传周期指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConfigureRebackPeriod">
+            <summary>
+设置回传周期指令类
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConigureDefaltVolume.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConigureDefaltVolume.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConigureDefaltVolume.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址*/
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConigureDefaltVolume.Column">
+            <summary>
+音量按百分比形式标识，其中：0x00 ：静音,0x01 -0x64 对应音量百分比：1-100%
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConigureDefaltVolume.B_cmd_tag">
+            <summary>
+设置默认音量指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConigureDefaltVolume">
+            <summary>
+设置默认音量指令类
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureReback.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureReback.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureReback.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址*/
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureReback.S_reback_address">
+            <summary>
+回传地址：电话号码，IP地址(含端口），或域名
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureReback.B_cmd_tag">
+            <summary>
+设置回传指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConfigureReback">
+            <summary>
+设置回传指令类
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureMainFrequency.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureMainFrequency.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureMainFrequency.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址*/
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureMainFrequency.QAM">
+            <summary>
+0:16QAM,1:32QAM,2:64QAM,3:128QAM,4:256QAM
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureMainFrequency.SymbolRate">
+            <summary>
+符号率 (Kbps)
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureMainFrequency.Freq">
+            <summary>
+KHZ,主频率*/
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureMainFrequency.B_cmd_tag">
+            <summary>
+设置主频指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConfigureMainFrequency">
+            <summary>
+设置主频指令类
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureWorkMode.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureWorkMode.list_Terminal_Address">
+            <summary>
+要设置的终端编号地址列表
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureWorkMode.B_Address_type">
+            <summary>
+要设置的终端编号地址类型 1: 表示逻辑地址； 2：表示物理地址*/
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureWorkMode.B_cmd_tag">
+            <summary>
+设置工作模式指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConfigureWorkMode">
+            <summary>
+设置工作模式指令类
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureSetAddress.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureSetAddress.S_Logic_address">
+            <summary>
+逻辑地址
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureSetAddress.S_Phisical_address">
+            <summary>
+物理地址
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureSetAddress.B_cmd_tag">
+            <summary>
+设置资源（逻辑）地址指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConfigureSetAddress">
+            <summary>
+设置资源（逻辑）地址指令类
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureTimeService.GetCmd">
+            <summary>
+获取指令的一般形式对像
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureTimeService.Real_time">
+            <summary>
+实时时间
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureTimeService.B_cmd_tag">
+            <summary>
+授时指令类型
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConfigureTimeService">
+            <summary>
+授时指令类
+</summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureTable.Initialization(StreamConfig*,EBMTable.SignatureCallBackDelegate)">
+            <summary>
+初始化应急广播配置表
+<param name="ts_config">输入参数，TS流配置参数结构体</param><param name="SignatureCallback">输入参数，数字签名回调委托</param><returns /></summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureTable.GetEBConfigureSection(System.Int32@)">
+            <summary>
+获取应急广播配置表数据
+<param name="PackageNum">输入输出参数，数据长度引用</param><returns>返回值，二进制分段数据</returns></summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureTable.GetEBConfigureSectionPackages(System.Int32*)">
+            <summary>
+获取应急广播配置表数据
+<param name="PackageNum">输入输出参数，数据长度指针</param><returns>返回值，二进制分段数据</returns></summary>
+        </member>
+        <member name="M:EBMTable.EBConfigureTable.BuildEBConfigureSection">
+            <summary>
+创建应急广播配置表数据分段
+</summary>
+        </member>
+        <member name="P:EBMTable.EBConfigureTable.Completed">
+            <summary>
+应急广播表是否已经完成发送，为true时表示已经完成发送。
+</summary>
+        </member>
+        <member name="P:EBMTable.EBConfigureTable.Repeat_count">
+            <summary>
+应急广播表已经发送次数计数。
+</summary>
+        </member>
+        <member name="P:EBMTable.EBConfigureTable.Repeat_times">
+            <summary>
+应急广播表重复发送的次数，为0表示一直重复发送。设置该属性将引发计数清零，重新开发发送数据
+</summary>
+        </member>
+        <member name="P:EBMTable.EBConfigureTable.Table_id_extension">
+            <summary>
+扩展子表id 
+</summary>
+        </member>
+        <member name="P:EBMTable.EBConfigureTable.Table_id">
+            <summary>
+索引表主表id 
+</summary>
+        </member>
+        <member name="F:EBMTable.EBConfigureTable.list_configure_cmd">
+            <summary>
+应急广播配置指令列表
+</summary>
+        </member>
+        <member name="F:EBMSection.EBConfigureSection.Repeat_times">
+            <summary>
+应急广播表重复发送的次数，为0表示一直重复发送。
+</summary>
+        </member>
+        <member name="M:EBMTable.EBCertAuthTable.Initialization(StreamConfig*,EBMTable.SignatureCallBackDelegate)">
+            <summary>
+获取应急广播证书授权表
+<param name="ts_config">输入参数，TS流配置参数结构体</param><param name="SignatureCallback">输入参数，数字签名回调委托</param><returns /></summary>
+        </member>
+        <member name="M:EBMTable.EBCertAuthTable.GetEBCertAuthSection(System.Int32@)">
+            <summary>
+获取应急广播证书授权数据分段
+<param name="PackageNum">输入输出参数，数据长度引用</param><returns>返回值，二进制分段数据</returns></summary>
+        </member>
+        <member name="M:EBMTable.EBCertAuthTable.GetEBCertAuthSectionPackages(System.Int32*)">
+            <summary>
+获取应急广播证书授权数据分段
+<param name="PackageNum">输入输出参数，数据长度指针</param><returns>返回值，二进制分段数据</returns></summary>
+        </member>
+        <member name="M:EBMTable.EBCertAuthTable.BuildEBCertAuthSection">
+            <summary>
+创建应急广播证书授权段数据
+</summary>
+        </member>
+        <member name="P:EBMTable.EBCertAuthTable.Completed">
+            <summary>
+应急广播表是否已经完成发送，为true时表示已经完成发送。
+</summary>
+        </member>
+        <member name="P:EBMTable.EBCertAuthTable.Repeat_count">
+            <summary>
+应急广播表已经发送次数计数。
+</summary>
+        </member>
+        <member name="P:EBMTable.EBCertAuthTable.Repeat_times">
+            <summary>
+应急广播表重复发送的次数，为0表示一直重复发送。设置该属性将引发计数清零，重新开发发送数据
+</summary>
+        </member>
+        <member name="P:EBMTable.EBCertAuthTable.Table_id_extension">
+            <summary>
+扩展子表id 
+</summary>
+        </member>
+        <member name="P:EBMTable.EBCertAuthTable.Table_id">
+            <summary>
+索引表主表id 
+</summary>
+        </member>
+        <member name="F:EBMTable.EBCertAuthTable.list_Cert_data">
+            <summary>
+当前应急广播证书数据
+</summary>
+        </member>
+        <member name="F:EBMTable.EBCertAuthTable.list_CertAuth_data">
+            <summary>
+当前应急广播证书授权列表数据。
+</summary>
+        </member>
+        <member name="F:EBMSection.EBCertAuthSection.Repeat_times">
+            <summary>
+应急广播表重复发送的次数，为0表示一直重复发送。
+</summary>
+        </member>
+        <member name="M:EBMTable.EBContentTable.Initialization(StreamConfig*,EBMTable.SignatureCallBackDelegate)">
+            <summary>
+初始化应急广播内容表
+<param name="ts_config">输入参数，TS流配置参数结构体</param><param name="SignatureCallback">输入参数，数字签名回调委托</param><returns /></summary>
+        </member>
+        <member name="M:EBMTable.EBContentTable.GetEBContentSection(System.Int32@)">
+            <summary>
+获取应急广播内容表数据
+<param name="PackageNum">输入输出参数，数据长度引用</param><returns>返回值，二进制分段数据</returns></summary>
+        </member>
+        <member name="M:EBMTable.EBContentTable.GetEBContentSectionPackages(System.Int32*)">
+            <summary>
+获取应急广播内容表数据
+<param name="PackageNum">输入输出参数，数据长度指针</param><returns>返回值，二进制分段数据</returns></summary>
+        </member>
+        <member name="M:EBMTable.EBContentTable.BuildEBContentSection">
+            <summary>
+创建应急广播内容表数据分段
+</summary>
+        </member>
+        <member name="P:EBMTable.EBContentTable.Completed">
+            <summary>
+应急广播表是否已经完成发送，为true时表示已经完成发送。
+</summary>
+        </member>
+        <member name="P:EBMTable.EBContentTable.Repeat_count">
+            <summary>
+应急广播表已经发送次数计数。
+</summary>
+        </member>
+        <member name="P:EBMTable.EBContentTable.Repeat_times">
+            <summary>
+应急广播表重复发送的次数，为0表示一直重复发送。设置该属性将引发计数清零，重新开发发送数据
+</summary>
+        </member>
+        <member name="P:EBMTable.EBContentTable.Table_id_extension">
+            <summary>
+扩展子表id 
+</summary>
+        </member>
+        <member name="P:EBMTable.EBContentTable.Table_id">
+            <summary>
+索引表主表id 
+</summary>
+        </member>
+        <member name="F:EBMSection.EBContentSection.Repeat_times">
+            <summary>
+应急广播表重复发送的次数，为0表示一直重复发送。
+</summary>
+        </member>
+        <member name="F:EBMTable.StdDescriptor.Br_descriptor">
+            <summary>
+描述符数据
+</summary>
+        </member>
+        <member name="F:EBMTable.StdDescriptor.B_descriptor_tag">
+            <summary>
+描述符标签 
+</summary>
+        </member>
+        <member name="M:EBMTable.Terristrial_delivery_system_descriptor.GetDescriptor">
+            <summary>
+获取标准格式的描述符对象。
+</summary>
+        </member>
+        <member name="F:EBMTable.Terristrial_delivery_system_descriptor.L_Sfn_mfn_flag">
+            <summary>
+单频网/多频网标志，0：单频网；1：多频网
+</summary>
+        </member>
+        <member name="F:EBMTable.Terristrial_delivery_system_descriptor.L_Other_frequency_flag">
+            <summary>
+其它频率标志位，0：未使用其它频率；1：使用了其它频率
+</summary>
+        </member>
+        <member name="F:EBMTable.Terristrial_delivery_system_descriptor.B_Interleaveing_mode">
+            <summary>
+绞织模式，0：绞织模式1；1：绞织模式2
+</summary>
+        </member>
+        <member name="F:EBMTable.Terristrial_delivery_system_descriptor.B_Frame_header_mode">
+            <summary>
+帧头模式，0：帧头模式1，PN相位变化；1：帧头模式1，PN相位不变；2：帧头模式2；3：帧头模式3，PN相位变化；4：帧头模式3，PN相位不变
+</summary>
+        </member>
+        <member name="F:EBMTable.Terristrial_delivery_system_descriptor.B_Number_of_subcarrier">
+            <summary>
+副载波数，1：子载波数量C=1，有双导频；2：子载波数量C=1，无双导频；3：子载波数量C=3780
+</summary>
+        </member>
+        <member name="F:EBMTable.Terristrial_delivery_system_descriptor.B_Modulation">
+            <summary>
+DTMB调制方式，1:4QAM；2:4QAM-NR；3:16QAM；4:32QAM；5:64QAM 
+</summary>
+        </member>
+        <member name="F:EBMTable.Terristrial_delivery_system_descriptor.B_FEC">
+            <summary>
+向前编码纠错参数1：码率为0.4的FEC（7488，3008）；2：码率为0.6的FEC（7488，4512）；3：码率为0.8的FEC（7488，6016）
+</summary>
+        </member>
+        <member name="F:EBMTable.Terristrial_delivery_system_descriptor.D_Centre_frequency">
+            <summary>
+DTMB中心频率,单位为MHz 
+</summary>
+        </member>
+        <member name="F:EBMTable.Terristrial_delivery_system_descriptor.I_descriptor_length">
+            <summary>
+描述符数据长度 
+</summary>
+        </member>
+        <member name="F:EBMTable.Terristrial_delivery_system_descriptor.B_descriptor_tag">
+            <summary>
+描述符标签,字符串类型，用文本表示一个十六进制字节 
+</summary>
+        </member>
+        <member name="T:EBMTable.Terristrial_delivery_system_descriptor">
+            <summary>
+地面数字电视详情频道描述符类
+</summary>
+        </member>
+        <member name="M:EBMTable.Cable_delivery_system_descriptor.GetDescriptor">
+            <summary>
+获取标准格式的描述符对象。
+</summary>
+        </member>
+        <member name="F:EBMTable.Cable_delivery_system_descriptor.B_FEC_inner">
+            <summary>
+向前纠错内码方式，默认为0 
+</summary>
+        </member>
+        <member name="F:EBMTable.Cable_delivery_system_descriptor.D_Symbol_rate">
+            <summary>
+符号率,Mbps 
+</summary>
+        </member>
+        <member name="F:EBMTable.Cable_delivery_system_descriptor.B_Modulation">
+            <summary>
+调制方式，1：16QAM，2：32QAM，3:64QAM，4:128QAM；5:256QAM
+</summary>
+        </member>
+        <member name="F:EBMTable.Cable_delivery_system_descriptor.B_FEC_outer">
+            <summary>
+向前纠错外码方式，默认为0 
+</summary>
+        </member>
+        <member name="F:EBMTable.Cable_delivery_system_descriptor.D_frequency">
+            <summary>
+频率,MHz 
+</summary>
+        </member>
+        <member name="F:EBMTable.Cable_delivery_system_descriptor.B_descriptor_length">
+            <summary>
+描述符数据长度 
+</summary>
+        </member>
+        <member name="F:EBMTable.Cable_delivery_system_descriptor.B_descriptor_tag">
+            <summary>
+描述符标签,字符串类型，用文本表示一个十六进制字节 
+</summary>
+        </member>
+        <member name="F:EBMTable.ProgramStreamInfo.Descriptor2">
+            <summary>
+详情频道2类元素描述符
+</summary>
+        </member>
+        <member name="F:EBMTable.ProgramStreamInfo.S_elementary_PID">
+            <summary>
+详情频道基本PID
+</summary>
+        </member>
+        <member name="T:EBMTable.ConfigureCmd">
+            <summary>
+配置数据类
+</summary>
+            <summary>
+配置数据类
+</summary>
+        </member>
+        <member name="T:EBMTable.AuxiliaryData">
+            <summary>
+辅助数据类
+</summary>
+            <summary>
+辅助数据类
+</summary>
+        </member>
+        <member name="T:EBMTable.MultilangualContent">
+            <summary>
+多语种内容类
+</summary>
+            <summary>
+多语种内容类
+</summary>
+        </member>
+        <member name="T:EBMTable.StdDescriptor">
+            <summary>
+标准描述符结构类
+</summary>
+            <summary>
+2类描述符结构类 
+</summary>
+        </member>
+        <member name="T:EBMTable.DailyBroadcastTable">
+            <summary>
+日常广播指令表类
+</summary>
+            <summary>
+日常广播指令表类
+</summary>
+        </member>
+        <member name="T:EBMTable.EBConfigureTable">
+            <summary>
+应急广播配置表数据类
+</summary>
+            <summary>
+应急广播配置表数据类
+</summary>
+        </member>
+        <member name="T:EBMTable.EBCertAuthTable">
+            <summary>
+应急广播证书授权表类
+</summary>
+            <summary>
+应急广播证书授权表类
+</summary>
+        </member>
+        <member name="T:EBMTable.EBContentTable">
+            <summary>
+应急广播内容表类
+</summary>
+            <summary>
+应急广播内容表类
+</summary>
+        </member>
+        <member name="T:EBMTable.EBMStream">
+            <summary>
+应急广播传送流类
+</summary>
+            <summary>
+应急广播传送流类
+</summary>
+        </member>
+        <member name="T:EBMTable.EBIndexTable">
+            <summary>
+应急广播索引表类
+</summary>
+            <summary>
+应急广播索引表类
+</summary>
+        </member>
+        <member name="T:EBMTable.EBIndex">
+            <summary>
+应急广播索引类
+</summary>
+            <summary>
+应急广播基本索引类
+</summary>
+        </member>
+        <member name="F:EBMSection.EBIndexSection.Repeat_times">
+            <summary>
+应急广播表重复发送的次数，为0表示一直重复发送。
+</summary>
+        </member>
+        <!-- 丢弃成员“T:EBMTable.DetailChannelDescript”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.ProgramStreamInfo.B_stream_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.Cable_delivery_system_descriptor”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureWorkMode.B_Terminal_wordmode”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureReback.B_reback_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdOutSwitch”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdOutSwitch.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdRdsTransfer”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.Br_Rds_data”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DetailChannelDescript”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.ProgramStreamInfo.B_stream_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.Cable_delivery_system_descriptor”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureWorkMode.B_Terminal_wordmode”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureReback.B_reback_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdOutSwitch”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdOutSwitch.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdRdsTransfer”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.Br_Rds_data”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DetailChannelDescript”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.ProgramStreamInfo.B_stream_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.Cable_delivery_system_descriptor”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureWorkMode.B_Terminal_wordmode”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureReback.B_reback_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdOutSwitch”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdOutSwitch.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdRdsTransfer”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.Br_Rds_data”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DetailChannelDescript”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.ProgramStreamInfo.B_stream_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.Cable_delivery_system_descriptor”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureWorkMode.B_Terminal_wordmode”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureReback.B_reback_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdOutSwitch”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdOutSwitch.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdRdsTransfer”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.Br_Rds_data”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DetailChannelDescript”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.ProgramStreamInfo.B_stream_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.Cable_delivery_system_descriptor”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureWorkMode.B_Terminal_wordmode”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureReback.B_reback_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdOutSwitch”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdOutSwitch.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdRdsTransfer”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.Br_Rds_data”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DetailChannelDescript”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.ProgramStreamInfo.B_stream_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.Cable_delivery_system_descriptor”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdOutSwitch”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdOutSwitch.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdRdsTransfer”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.Br_Rds_data”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DetailChannelDescript”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.ProgramStreamInfo.B_stream_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.Cable_delivery_system_descriptor”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DetailChannelDescript”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.ProgramStreamInfo.B_stream_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.Cable_delivery_system_descriptor”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureWorkMode.B_Terminal_wordmode”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.EBConfigureReback.B_reback_type”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdOutSwitch”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdOutSwitch.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“T:EBMTable.DailyCmdRdsTransfer”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.B_cmd_tag”的格式错误的 XML 文档注释。 -->
+        <!-- 丢弃成员“F:EBMTable.DailyCmdRdsTransfer.Br_Rds_data”的格式错误的 XML 文档注释。 -->
+    </members>
+</doc>

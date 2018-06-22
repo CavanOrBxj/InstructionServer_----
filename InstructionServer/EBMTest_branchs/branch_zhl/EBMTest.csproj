@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1924E6B7-4DA0-4E57-AA46-09965E28C975}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EBMTest</RootNamespace>
+    <AssemblyName>EBMTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>voice.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlAstro, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ControlAstro.dll</HintPath>
+    </Reference>
+    <Reference Include="EBMTableLib, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>EBMTableLib\EBMTableLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAccountEventArgs.cs" />
+    <Compile Include="Controls\DataGridViewSysTimeColumn.cs" />
+    <Compile Include="Controls\DataGridViewSysTimeDelayColumn.cs" />
+    <Compile Include="DailyBroadcast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyBroadcast.Designer.cs">
+      <DependentUpon>DailyBroadcast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyBroadcastInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyBroadcastInfo.Designer.cs">
+      <DependentUpon>DailyBroadcastInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyBroadcastDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyBroadcastDetail.Designer.cs">
+      <DependentUpon>DailyBroadcastDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMCertAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMCertAuth.Designer.cs">
+      <DependentUpon>EBMCertAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMCertAuthInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMCertAuthInfo.Designer.cs">
+      <DependentUpon>EBMCertAuthInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMConfigure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMConfigure.Designer.cs">
+      <DependentUpon>EBMConfigure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMConfigureDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMConfigureDetail.Designer.cs">
+      <DependentUpon>EBMConfigureDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMConfigureInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMConfigureInfo.Designer.cs">
+      <DependentUpon>EBMConfigureInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMContent.Designer.cs">
+      <DependentUpon>EBMContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMContentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMContentDetail.Designer.cs">
+      <DependentUpon>EBMContentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMContentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMContentInfo.Designer.cs">
+      <DependentUpon>EBMContentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMIndex.Designer.cs">
+      <DependentUpon>EBMIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMIndexDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMIndexDetail.Designer.cs">
+      <DependentUpon>EBMIndexDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMIndexInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMIndexInfo.Designer.cs">
+      <DependentUpon>EBMIndexInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMLogIn.Designer.cs">
+      <DependentUpon>EBMLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMStreamSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMStreamSet.Designer.cs">
+      <DependentUpon>EBMStreamSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBMMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBMMain.Designer.cs">
+      <DependentUpon>EBMMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\DailyCmdTag.cs" />
+    <Compile Include="Enums\OperateType.cs" />
+    <Compile Include="Enums\PageType.cs" />
+    <Compile Include="Enums\ParamType.cs" />
+    <Compile Include="Enums\TableType.cs" />
+    <Compile Include="Forms\FormMediaStreamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMediaStreamer.Designer.cs">
+      <DependentUpon>FormMediaStreamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AddCertAuth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\AddCertAuth.Designer.cs">
+      <DependentUpon>AddCertAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AddConfigureBtn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\AddConfigureBtn.Designer.cs">
+      <DependentUpon>AddConfigureBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AddressTypeLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\AddressTypeLayout.Designer.cs">
+      <DependentUpon>AddressTypeLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AddDailyBroadcastBtn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\AddDailyBroadcastBtn.Designer.cs">
+      <DependentUpon>AddDailyBroadcastBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ConfigureContentMoniterRetbackLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ConfigureContentMoniterRetbackLayout.Designer.cs">
+      <DependentUpon>ConfigureContentMoniterRetbackLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ConfigureFreqLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ConfigureFreqLayout.Designer.cs">
+      <DependentUpon>ConfigureFreqLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ConfigurePeriodLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ConfigurePeriodLayout.Designer.cs">
+      <DependentUpon>ConfigurePeriodLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ConfigureRebackLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ConfigureRebackLayout.Designer.cs">
+      <DependentUpon>ConfigureRebackLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ConfigureSetLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ConfigureSetLayout.Designer.cs">
+      <DependentUpon>ConfigureSetLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ConfigureTimeLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ConfigureTimeLayout.Designer.cs">
+      <DependentUpon>ConfigureTimeLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ConfigureVolumnLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ConfigureVolumnLayout.Designer.cs">
+      <DependentUpon>ConfigureVolumnLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ConfigureWorkLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ConfigureWorkLayout.Designer.cs">
+      <DependentUpon>ConfigureWorkLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ContentAuxiliaryDataLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ContentAuxiliaryDataLayout.Designer.cs">
+      <DependentUpon>ContentAuxiliaryDataLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\DailyBroadcastInfoLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\DailyBroadcastInfoLayout.Designer.cs">
+      <DependentUpon>DailyBroadcastInfoLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\DailyBroadcastOutSwitchLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\DailyBroadcastOutSwitchLayout.Designer.cs">
+      <DependentUpon>DailyBroadcastOutSwitchLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\DailyBroadcastPlayCtrlLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\DailyBroadcastPlayCtrlLayout.Designer.cs">
+      <DependentUpon>DailyBroadcastPlayCtrlLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\DailyBroadcastRdsTransferLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\DailyBroadcastRdsTransferLayout.Designer.cs">
+      <DependentUpon>DailyBroadcastRdsTransferLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\DailyBroadcastStopProgramLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\DailyBroadcastStopProgramLayout.Designer.cs">
+      <DependentUpon>DailyBroadcastStopProgramLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ConfigureContentRealMoniterLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ConfigureContentRealMoniterLayout.designer.cs">
+      <DependentUpon>ConfigureContentRealMoniterLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ConfigureStatusRetbackLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ConfigureStatusRetbackLayout.designer.cs">
+      <DependentUpon>ConfigureStatusRetbackLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EBMIndexDes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\EBMIndexDes.Designer.cs">
+      <DependentUpon>EBMIndexDes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EBMIndexDetChlDes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\EBMIndexDetChlDes.Designer.cs">
+      <DependentUpon>EBMIndexDetChlDes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EBMIndexProgramStreamInfoLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\EBMIndexProgramStreamInfoLayout.Designer.cs">
+      <DependentUpon>EBMIndexProgramStreamInfoLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EBMIndexResourceCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\EBMIndexResourceCode.Designer.cs">
+      <DependentUpon>EBMIndexResourceCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ParameterTagLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\ParameterTagLayout.Designer.cs">
+      <DependentUpon>ParameterTagLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\RepeatTimesLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\RepeatTimesLayout.Designer.cs">
+      <DependentUpon>RepeatTimesLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\TerminalAddressLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\TerminalAddressLayout.Designer.cs">
+      <DependentUpon>TerminalAddressLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableData\TableDataHelper.cs" />
+    <Compile Include="Utils\ComboBoxHelper.cs" />
+    <Compile Include="Utils\EBMLogHelper.cs" />
+    <EmbeddedResource Include="DailyBroadcast.resx">
+      <DependentUpon>DailyBroadcast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyBroadcastInfo.resx">
+      <DependentUpon>DailyBroadcastInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyBroadcastDetail.resx">
+      <DependentUpon>DailyBroadcastDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMCertAuth.resx">
+      <DependentUpon>EBMCertAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMCertAuthInfo.resx">
+      <DependentUpon>EBMCertAuthInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMConfigure.resx">
+      <DependentUpon>EBMConfigure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMConfigureDetail.resx">
+      <DependentUpon>EBMConfigureDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMConfigureInfo.resx">
+      <DependentUpon>EBMConfigureInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMContent.resx">
+      <DependentUpon>EBMContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMContentDetail.resx">
+      <DependentUpon>EBMContentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMContentInfo.resx">
+      <DependentUpon>EBMContentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMIndex.resx">
+      <DependentUpon>EBMIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMIndexDetail.resx">
+      <DependentUpon>EBMIndexDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMIndexInfo.resx">
+      <DependentUpon>EBMIndexInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMLogIn.resx">
+      <DependentUpon>EBMLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMStreamSet.resx">
+      <DependentUpon>EBMStreamSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBMMain.resx">
+      <DependentUpon>EBMMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMediaStreamer.resx">
+      <DependentUpon>FormMediaStreamer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\AddCertAuth.resx">
+      <DependentUpon>AddCertAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\AddConfigureBtn.resx">
+      <DependentUpon>AddConfigureBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\AddressTypeLayout.resx">
+      <DependentUpon>AddressTypeLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\AddDailyBroadcastBtn.resx">
+      <DependentUpon>AddDailyBroadcastBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ConfigureContentMoniterRetbackLayout.resx">
+      <DependentUpon>ConfigureContentMoniterRetbackLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ConfigureFreqLayout.resx">
+      <DependentUpon>ConfigureFreqLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ConfigurePeriodLayout.resx">
+      <DependentUpon>ConfigurePeriodLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ConfigureRebackLayout.resx">
+      <DependentUpon>ConfigureRebackLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ConfigureSetLayout.resx">
+      <DependentUpon>ConfigureSetLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ConfigureTimeLayout.resx">
+      <DependentUpon>ConfigureTimeLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ConfigureVolumnLayout.resx">
+      <DependentUpon>ConfigureVolumnLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ConfigureWorkLayout.resx">
+      <DependentUpon>ConfigureWorkLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ContentAuxiliaryDataLayout.resx">
+      <DependentUpon>ContentAuxiliaryDataLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\DailyBroadcastInfoLayout.resx">
+      <DependentUpon>DailyBroadcastInfoLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\DailyBroadcastOutSwitchLayout.resx">
+      <DependentUpon>DailyBroadcastOutSwitchLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\DailyBroadcastPlayCtrlLayout.resx">
+      <DependentUpon>DailyBroadcastPlayCtrlLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\DailyBroadcastRdsTransferLayout.resx">
+      <DependentUpon>DailyBroadcastRdsTransferLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\DailyBroadcastStopProgramLayout.resx">
+      <DependentUpon>DailyBroadcastStopProgramLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ConfigureContentRealMoniterLayout.resx">
+      <DependentUpon>ConfigureContentRealMoniterLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ConfigureStatusRetbackLayout.resx">
+      <DependentUpon>ConfigureStatusRetbackLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\EBMIndexDes.resx">
+      <DependentUpon>EBMIndexDes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\EBMIndexDetChlDes.resx">
+      <DependentUpon>EBMIndexDetChlDes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\EBMIndexProgramStreamInfoLayout.resx">
+      <DependentUpon>EBMIndexProgramStreamInfoLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\EBMIndexResourceCode.resx">
+      <DependentUpon>EBMIndexResourceCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ParameterTagLayout.resx">
+      <DependentUpon>ParameterTagLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\RepeatTimesLayout.resx">
+      <DependentUpon>RepeatTimesLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\TerminalAddressLayout.resx">
+      <DependentUpon>TerminalAddressLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="voice.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName)==Release xcopy /s /e /y /i $(ProjectDir)\bin\Release "D:\ASTRO\VSRelease\广西应急广播测试工具"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

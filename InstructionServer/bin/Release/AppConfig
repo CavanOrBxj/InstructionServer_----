@@ -1,0 +1,4 @@
+{
+  "MediaStreamer": "{\r\n  \"MediaPath\": \"D:/MP3/蓝又时 - 天亮说晚安.mp3\",\r\n  \"MediaIP\": \"192.168.4.15\",\r\n  \"MediaPort\": \"8084\",\r\n  \"MediaAudioPID\": \"123\",\r\n  \"MediaVideoPID\": \"123\",\r\n  \"MediaVideoRate\": \"123123\",\r\n  \"MediaAudioRate\": \"123123\"\r\n}",
+  "IndexFirstInit": "False"
+}

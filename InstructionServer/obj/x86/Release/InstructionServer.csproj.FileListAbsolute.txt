@@ -1,0 +1,1021 @@
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\bin\Release\InstructionServer.exe.config
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\bin\Release\InstructionServer.exe
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\bin\Release\InstructionServer.pdb
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\bin\Release\ControlAstro.dll
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\bin\Release\EBMTableLib.dll
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\bin\Release\log4net.dll
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\bin\Release\Newtonsoft.Json.dll
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\bin\Release\EBMTableLib.xml
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\bin\Release\Newtonsoft.Json.xml
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.exe
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.pdb
+D:\ProjectDoc\指令服务新_老广西测试工具修改\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+F:\InstructionServer\bin\Release\InstructionServer.exe.config
+F:\InstructionServer\bin\Release\InstructionServer.exe
+F:\InstructionServer\bin\Release\InstructionServer.pdb
+F:\InstructionServer\bin\Release\ControlAstro.dll
+F:\InstructionServer\bin\Release\EBMTableLib.dll
+F:\InstructionServer\bin\Release\log4net.dll
+F:\InstructionServer\bin\Release\Newtonsoft.Json.dll
+F:\InstructionServer\bin\Release\EBMTableLib.xml
+F:\InstructionServer\bin\Release\Newtonsoft.Json.xml
+F:\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+F:\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+F:\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+F:\InstructionServer\obj\x86\Release\InstructionServer.exe
+F:\InstructionServer\obj\x86\Release\InstructionServer.pdb
+F:\InstructionServer_20180516\InstructionServer\bin\Release\InstructionServer.exe.config
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.exe
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.pdb
+F:\InstructionServer_20180516\InstructionServer\bin\Release\InstructionServer.exe
+F:\InstructionServer_20180516\InstructionServer\bin\Release\InstructionServer.pdb
+F:\InstructionServer_20180516\InstructionServer\bin\Release\ControlAstro.dll
+F:\InstructionServer_20180516\InstructionServer\bin\Release\EBMTableLib.dll
+F:\InstructionServer_20180516\InstructionServer\bin\Release\log4net.dll
+F:\InstructionServer_20180516\InstructionServer\bin\Release\Newtonsoft.Json.dll
+F:\InstructionServer_20180516\InstructionServer\bin\Release\EBMTableLib.xml
+F:\InstructionServer_20180516\InstructionServer\bin\Release\Newtonsoft.Json.xml
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+F:\InstructionServer_20180516\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\bin\Release\InstructionServer.exe.config
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\bin\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\bin\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\bin\Release\ControlAstro.dll
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\bin\Release\EBMTableLib.dll
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\bin\Release\log4net.dll
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\bin\Release\Newtonsoft.Json.dll
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\bin\Release\EBMTableLib.xml
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\bin\Release\Newtonsoft.Json.xml
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+D:\20180228广西测试\广西测试信息\InstructionServer\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\bin\Release\InstructionServer.exe.config
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\bin\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\bin\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\bin\Release\ControlAstro.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\bin\Release\EBMTableLib.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\bin\Release\log4net.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\bin\Release\Newtonsoft.Json.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\bin\Release\EBMTableLib.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\bin\Release\Newtonsoft.Json.xml
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180523\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\bin\Release\InstructionServer.exe.config
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\bin\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\bin\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\bin\Release\ControlAstro.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\bin\Release\EBMTableLib.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\bin\Release\log4net.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\bin\Release\Newtonsoft.Json.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\bin\Release\EBMTableLib.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\bin\Release\Newtonsoft.Json.xml
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer20180526_完整版\InstructionServer\obj\x86\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\bin\Release\InstructionServer.exe.config
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\bin\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\bin\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\bin\Release\ControlAstro.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\bin\Release\EBMTableLib.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\bin\Release\log4net.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\bin\Release\Newtonsoft.Json.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\bin\Release\EBMTableLib.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\bin\Release\Newtonsoft.Json.xml
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+D:\20180228广西测试\广西测试信息\InstructionServer20180529_完整版\InstructionServer\bin\Release\EBMTableLib.xml
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\bin\Release\InstructionServer.exe.config
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\bin\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\bin\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\bin\Release\ControlAstro.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\bin\Release\EBMTableLib.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\bin\Release\log4net.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\bin\Release\Newtonsoft.Json.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\bin\Release\EBMTableLib.xml
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\bin\Release\Newtonsoft.Json.xml
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版\InstructionServer\obj\x86\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\InstructionServer.exe.config
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\InstructionServer.pdb
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\ControlAstro.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\EBMTableLib.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\log4net.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\Newtonsoft.Json.dll
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\EBMTableLib.xml
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\Newtonsoft.Json.xml
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.exe
+D:\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\InstructionServer.exe.config
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\ControlAstro.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\EBMTableLib.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\log4net.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\Newtonsoft.Json.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\EBMTableLib.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\bin\Release\Newtonsoft.Json.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180531_完整版 - 副本\InstructionServer\obj\x86\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\bin\Release\InstructionServer.exe.config
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\bin\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\bin\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\bin\Release\ControlAstro.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\bin\Release\EBMTableLib.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\bin\Release\log4net.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\bin\Release\Newtonsoft.Json.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\bin\Release\EBMTableLib.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\bin\Release\Newtonsoft.Json.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\bin\Release\InstructionServer.exe.config
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\bin\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\bin\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\bin\Release\ControlAstro.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\bin\Release\EBMTableLib.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\bin\Release\log4net.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\bin\Release\Newtonsoft.Json.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\bin\Release\EBMTableLib.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\bin\Release\Newtonsoft.Json.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\bin\Release\InstructionServer.exe.config
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\bin\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\bin\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\bin\Release\ControlAstro.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\bin\Release\EBMTableLib.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\bin\Release\log4net.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\bin\Release\Newtonsoft.Json.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\bin\Release\EBMTableLib.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\bin\Release\Newtonsoft.Json.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180601 - 修改证书增加版本 - 副本\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\bin\Release\InstructionServer.exe.config
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\bin\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\bin\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\bin\Release\ControlAstro.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\bin\Release\EBMTableLib.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\bin\Release\log4net.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\bin\Release\Newtonsoft.Json.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\bin\Release\EBMTableLib.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\bin\Release\Newtonsoft.Json.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\bin\Release\InstructionServer.exe.config
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\bin\Release\InstructionServer.exe
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\bin\Release\InstructionServer.pdb
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\bin\Release\ControlAstro.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\bin\Release\EBMTableLib.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\bin\Release\log4net.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\bin\Release\Newtonsoft.Json.dll
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\bin\Release\EBMTableLib.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\bin\Release\Newtonsoft.Json.xml
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+F:\20180601广西\20180228广西测试\广西测试信息\InstructionServer20180603_正式测试版 - 修改升级\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\bin\Release\InstructionServer.exe.config
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\bin\Release\InstructionServer.exe
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\bin\Release\InstructionServer.pdb
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\bin\Release\ControlAstro.dll
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\bin\Release\EBMTableLib.dll
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\bin\Release\log4net.dll
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\bin\Release\Newtonsoft.Json.dll
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\bin\Release\EBMTableLib.xml
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\bin\Release\Newtonsoft.Json.xml
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMTestForm.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuth.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMCertAuthInfo.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigure.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureDetail.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMConfigureInfo.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMContent.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMContentDetail.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMContentInfo.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndex.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexDetail.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMIndexInfo.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMLogIn.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMCASet.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMStreamSet.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Forms.FormMediaStreamer.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddCertAuth.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddConfigureBtn.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddressTypeLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.AddDailyBroadcastBtn.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentMoniterRetbackLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureFreqLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigurePeriodLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRdsConfigLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureRebackLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSetLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureSoftwareUpGradeLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackGXLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureTimeLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureVolumnLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureWorkLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ContentAuxiliaryDataLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastInfoLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastOutSwitchLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastPlayCtrlLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastRdsTransferLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.DailyBroadcastStopProgramLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureContentRealMoniterLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ConfigureStatusRetbackLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDes.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexDetChlDes.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexProgramStreamInfoLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.EBMIndexResourceCode.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.ParameterTagLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.RepeatTimesLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.exe
+D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\obj\x86\Release\InstructionServer.pdb

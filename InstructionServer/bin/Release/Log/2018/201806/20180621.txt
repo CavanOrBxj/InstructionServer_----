@@ -1,0 +1,379 @@
+
+ 
+记录时间：2018-06-21 17:29:53,287 
+线程ID:[20] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 InstructionServer.EBMMain.UpdateDataTextNew(Object tag) 位置 D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\EBMMain.cs:行号 2865
+ 
+
+ 
+记录时间：2018-06-21 17:30:41,686 
+线程ID:[20] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 InstructionServer.EBMMain.UpdateDataTextNew(Object tag) 位置 D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\EBMMain.cs:行号 2865
+ 
+
+ 
+记录时间：2018-06-21 17:31:05,482 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:31:17,298 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 InstructionServer.EBMMain.UpdateDataTextNew(Object tag) 位置 D:\ProjectDoc\software\InstructionServer_广西版本\InstructionServer\EBMMain.cs:行号 2865
+ 
+
+ 
+记录时间：2018-06-21 17:31:31,466 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:31:31,557 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:31:34,426 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:31:34,491 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:31:37,426 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:31:37,513 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:31:40,938 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:31:54,625 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:42:59,416 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:43:29,818 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:44:49,483 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:44:57,891 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:45:24,760 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:47:12,310 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:47:50,721 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:48:59,152 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:49:21,634 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:49:47,493 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:51:12,057 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:51:23,647 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:52:29,295 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:52:34,701 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:53:05,150 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:53:31,643 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:53:43,220 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:53:55,687 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:58:04,633 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:58:12,129 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:59:13,463 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 17:59:19,440 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 18:14:57,392 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 18:15:13,882 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 18:17:37,440 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 18:17:43,842 
+线程ID:[17] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 18:18:59,454 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 18:19:56,934 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 18:20:08,511 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 19:22:19,717 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 19:22:27,131 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 19:22:38,773 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 19:22:48,260 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 19:24:32,199 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-06-21 19:24:38,672 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
