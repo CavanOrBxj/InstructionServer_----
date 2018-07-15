@@ -1030,7 +1030,6 @@ E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServe
 E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\bin\Release\Newtonsoft.Json.dll
 E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\bin\Release\EBMTableLib.xml
 E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\bin\Release\Newtonsoft.Json.xml
-E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
 E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcast.resources
 E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastInfo.resources
 E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.DailyBroadcastTerAddressInfo.resources
@@ -1083,3 +1082,4 @@ E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServe
 E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
 E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
 E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+E:\GitHub\InstructionServer_广西版本\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
