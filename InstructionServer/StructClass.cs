@@ -139,7 +139,13 @@ namespace InstructionServer
             set
             {
                 tdsd = value;
-                if (value != null) DetlChlDescriptor = value.GetDescriptor();
+                if (value != null)
+                {
+                 StdDescriptor tmp=   value.GetDescriptor();
+                 tmp.B_descriptor_tag = 2;
+                 DetlChlDescriptor = tmp; 
+                    //DetlChlDescriptor.B_descriptor_tag = 2;
+                } 
             }
         }
         public object DeliverySystemDescriptor

@@ -54,6 +54,9 @@ namespace InstructionServer
                 case "5":
                     AnalysisEBContentData(MsgMap);
                     break;
+                case "6":
+                    ChangeInputChannel(MsgMap);
+                    break;
             }
         }
 
@@ -127,6 +130,19 @@ namespace InstructionServer
                     tmp.BL_details_channel_indicate = map["BL_details_channel_indicate"].ToString();
                     tmp.IndexItemID = map["IndexItemID"].ToString();
                     tmp.S_EBM_id = map["S_EBM_id"].ToString().Substring(0, 30);
+                    #region   特殊处理EBM_ID 凑到30个长度
+                    //if (map["S_EBM_id"].ToString().Length < 30)
+                    //{
+                    //    tmp.IndexItemID = map["S_EBM_id"].ToString() + "000000000000";
+                    //}
+                    //else
+                    //{
+                    //    tmp.S_EBM_id = map["S_EBM_id"].ToString().Substring(0, 30);
+                    //}
+                    #endregion
+
+
+
                     tmp.S_EBM_original_network_id = (SingletonInfo.GetInstance().OriginalNetworkId + 1).ToString();
                     tmp.S_EBM_start_time = map["S_EBM_start_time"].ToString();
                     tmp.S_EBM_end_time = map["S_EBM_end_time"].ToString();
@@ -696,6 +712,32 @@ namespace InstructionServer
         }
 
         private void AnalysisEBContentData(IPrimitiveMap map)
+        {
+            string packetype = map["PACKETTYPE"].ToString();
+            OperatorData op = new OperatorData();
+            op.OperatorType = packetype;
+            JavaScriptSerializer Serializer = new JavaScriptSerializer();
+
+            switch (packetype)
+            {
+                case "AddEBContent":
+
+                case "ModifyEBContent":
+                    string dataAdd = map["data"].ToString();
+                    JsonstructureDeal(ref dataAdd);
+                    List<EBMID_Content> listEBContent_ = Serializer.Deserialize<List<EBMID_Content>>(dataAdd);
+                    op.Data = (object)listEBContent_;
+                    break;
+
+                case "DelDailyBroadcast":
+                    string ItemList = map["ItemIDList"].ToString();
+                    op.Data = ItemList;
+                    break;
+            }
+            DataDealHelper.MyEvent(op);
+        }
+
+        private void ChangeInputChannel(IPrimitiveMap map)
         {
             string packetype = map["PACKETTYPE"].ToString();
             OperatorData op = new OperatorData();

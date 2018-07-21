@@ -77,9 +77,6 @@ namespace InstructionServer
                      strData2 += " " + signature[i].ToString("X2");
                  }
                  //  LogRecord.WriteLogFile("签名数据：" + strData2);
-
-
-              
              }
              catch (Exception ex)
              {

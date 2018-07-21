@@ -99,8 +99,12 @@
     <Compile Include="AdminAccountEventArgs.cs" />
     <Compile Include="Calcle.cs" />
     <Compile Include="ComboBind.cs" />
-    <Compile Include="Controls\DataGridViewSysTimeColumn.cs" />
-    <Compile Include="Controls\DataGridViewSysTimeDelayColumn.cs" />
+    <Compile Include="Controls\DataGridViewSysTimeColumn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DataGridViewSysTimeDelayColumn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="DailyBroadcast.cs">
       <SubType>Form</SubType>
     </Compile>
