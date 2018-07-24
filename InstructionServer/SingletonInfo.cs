@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using System.Data;
 using EBSignature;
+using System.Net;
 
 namespace InstructionServer
 {
     public class SingletonInfo
     {
         private static SingletonInfo _singleton;
-        public int DeviceHandle_sjj1507;
-        public int DeviceHandle_sjj1313;
-
-        public sjj1507 crambler1507;
-        public sjj1313 crambler1313;
 
         public int scramblernum;//记录当前所使用的是哪种CA 江南天安-1 江南科友-2     内置CA-5
 
@@ -40,21 +36,24 @@ namespace InstructionServer
         public string PubKey;//增加证书的公钥
 
         public int Cert_Index;//证书索引
+        public string LocalHost;//本机IP
+       
+        public string ebm_id_front;
+        public string ebm_id_behind;
+        public int ebm_id_count;
 
-     
+        public TcpHelper tcpsend;
+
+        public Dictionary<string,IPEndPoint> PhysicalCode2IPDic;//记录适配器硬件上传的IP及端口
 
         private SingletonInfo()                                                                 
         {
             scramblernum = 0;
-            DeviceHandle_sjj1507 = 0;
-            DeviceHandle_sjj1313 = 0;
             ischecksignature = false;
             OpenScramblerReturn = 2;
             InlayCAType = 0;
             IsUseCAInfo = true; //默认启用CA
             InlayCA=new EbmSignature();
-            crambler1507 = new sjj1507();
-            crambler1313 = new sjj1313();
             IsStartSend = false;
             cramblertype = "";
             OriginalNetworkId = 0;//是否需要保存？   20180328
@@ -66,7 +65,13 @@ namespace InstructionServer
             PriKey = "";
             PubKey = "";
             Cert_Index = 0;
+            LocalHost = "";
+            ebm_id_front = "";
+            ebm_id_behind = "";
+            ebm_id_count = 0;
+            PhysicalCode2IPDic = new Dictionary<string, IPEndPoint>();
 
+            tcpsend = new TcpHelper();
         }
 
         public static SingletonInfo GetInstance()
