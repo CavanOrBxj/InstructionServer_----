@@ -1097,3 +1097,4 @@ D:\GitHub\InstructionServer_----\InstructionServer\bin\Release\Newtonsoft.Json.x
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache

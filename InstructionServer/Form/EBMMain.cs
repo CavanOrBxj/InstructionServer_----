@@ -319,8 +319,8 @@ namespace InstructionServer
                 EbmStream.EB_Index_Table = GetEBIndexTable(ref EB_Index_Table) ? EB_Index_Table : null;
                 EbMStream.Initialization();
             }
-            UpdateDataTextNew((object)1);
-            GC.Collect();
+           // UpdateDataTextNew((object)1);
+         //   GC.Collect();
         }
 
         private void AddAreaEBMIndex2Global(ModifyEBMIndex modify)
@@ -499,8 +499,8 @@ namespace InstructionServer
                     EbmStream.EB_Index_Table = GetEBIndexTable(ref EB_Index_Table) ? EB_Index_Table : null;
                     EbMStream.Initialization();
                 }
-                UpdateDataTextNew((object)1);
-                GC.Collect();
+              //  UpdateDataTextNew((object)1);
+              //  GC.Collect();
             }
             catch (Exception ex)
             {
