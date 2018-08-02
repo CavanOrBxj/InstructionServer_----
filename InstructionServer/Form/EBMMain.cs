@@ -71,17 +71,7 @@ namespace InstructionServer
             try
             {
                 InitializeComponent();
-                CheckIniConfig();
-                InitConfig();
-                IsStartStream = false;
-                EbmStream = new EBMStream();
-                InitTable();
-                InitEBStream();
-                calcel = new Calcle();
-                calcel.MyEvent += new Calcle.MyDelegate(NetErrorDeal);
-                InitStreamTableNew();
-                InitTCPServer();
-                this.Load += EBMMain_Load; 
+                Load += EBMMain_Load; 
             }
             catch (Exception ex)
             {
@@ -93,27 +83,36 @@ namespace InstructionServer
 
         private void InitConfig()
         {
-            SingletonInfo.GetInstance().cramblertype = ini.ReadValue("Scrambler", "ScramblerType");
-            SingletonInfo.GetInstance().IsGXProtocol = ini.ReadValue("ProtocolType", "ProtocolType") == "1" ? true : false;//“1”表示广西协议 2表示国标
+            try
+            {
+                SingletonInfo.GetInstance().cramblertype = ini.ReadValue("Scrambler", "ScramblerType");
+                SingletonInfo.GetInstance().IsGXProtocol = ini.ReadValue("ProtocolType", "ProtocolType") == "1" ? true : false;//“1”表示广西协议 2表示国标
 
-            #region AddCertInfo
-            SingletonInfo.GetInstance().IsUseAddCert = ini.ReadValue("AddCertInfo", "IsUseAddCert") == "1" ? true : false;//“1”表示使用增加的证书 2表示不使用增加证书信息
-            SingletonInfo.GetInstance().Cert_SN = ini.ReadValue("AddCertInfo", "Cert_SN");
-            SingletonInfo.GetInstance().PriKey = ini.ReadValue("AddCertInfo", "PriKey");
-            SingletonInfo.GetInstance().PubKey = ini.ReadValue("AddCertInfo", "PubKey");
+                #region AddCertInfo
+                SingletonInfo.GetInstance().IsUseAddCert = ini.ReadValue("AddCertInfo", "IsUseAddCert") == "1" ? true : false;//“1”表示使用增加的证书 2表示不使用增加证书信息
+                SingletonInfo.GetInstance().Cert_SN = ini.ReadValue("AddCertInfo", "Cert_SN");
+                SingletonInfo.GetInstance().PriKey = ini.ReadValue("AddCertInfo", "PriKey");
+                SingletonInfo.GetInstance().PubKey = ini.ReadValue("AddCertInfo", "PubKey");
 
-            EBCert tmp = new EBCert();
-            tmp.Cert_sn = SingletonInfo.GetInstance().Cert_SN;
-            tmp.PriKey = SingletonInfo.GetInstance().PriKey;
-            tmp.PubKey = SingletonInfo.GetInstance().PubKey;
-            SingletonInfo.GetInstance().Cert_Index = SingletonInfo.GetInstance().InlayCA.AddEBCert(tmp);
-            #endregion
-            TcpReceivePort = Convert.ToInt32(ini.ReadValue("TCP", "ReceivePort"));
-            SingletonInfo.GetInstance().LocalHost = ini.ReadValue("LocalHost", "IP");
+                EBCert tmp = new EBCert();
+                tmp.Cert_sn = SingletonInfo.GetInstance().Cert_SN;
+                tmp.PriKey = SingletonInfo.GetInstance().PriKey;
+                tmp.PubKey = SingletonInfo.GetInstance().PubKey;
+                SingletonInfo.GetInstance().Cert_Index = SingletonInfo.GetInstance().InlayCA.AddEBCert(tmp);
+                #endregion
+                TcpReceivePort = Convert.ToInt32(ini.ReadValue("TCP", "ReceivePort"));
+                SingletonInfo.GetInstance().LocalHost = ini.ReadValue("LocalHost", "IP");
 
-            SingletonInfo.GetInstance().ebm_id_front = ini.ReadValue("EBM", "ebm_id_front");
-            SingletonInfo.GetInstance().ebm_id_behind = ini.ReadValue("EBM", "ebm_id_behind");
-            SingletonInfo.GetInstance().ebm_id_count = Convert.ToInt32(ini.ReadValue("EBM", "ebm_id_count")); 
+                SingletonInfo.GetInstance().ebm_id_front = ini.ReadValue("EBM", "ebm_id_front");
+                SingletonInfo.GetInstance().ebm_id_behind = ini.ReadValue("EBM", "ebm_id_behind");
+                SingletonInfo.GetInstance().ebm_id_count = Convert.ToInt32(ini.ReadValue("EBM", "ebm_id_count"));
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+      
 
         }
 
@@ -204,6 +203,19 @@ namespace InstructionServer
 
         void EBMMain_Load(object sender, EventArgs e)
         {
+
+            CheckIniConfig();
+            InitConfig();
+            IsStartStream = false;
+            EbmStream = new EBMStream();
+            InitTable();
+            InitEBStream();
+            calcel = new Calcle();
+            calcel.MyEvent += new Calcle.MyDelegate(NetErrorDeal);
+            InitStreamTableNew();
+            InitTCPServer();
+
+
             Gtoken = new object();
             ConnectMQServer();
             dataHelper = new DataDealHelper();
