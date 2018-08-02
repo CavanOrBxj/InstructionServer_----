@@ -1147,3 +1147,6 @@ D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionSe
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.Layouts.TerminalAddressLayout.resources
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
+E:\GitHub\InstructionServer_----\InstructionServer\bin\Release\InstructionServer.exe.config
+E:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.exe
+E:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.pdb
