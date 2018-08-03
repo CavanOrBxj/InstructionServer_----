@@ -46,6 +46,9 @@ namespace InstructionServer
 
         public Dictionary<string,IPEndPoint> PhysicalCode2IPDic;//记录适配器硬件上传的IP及端口
 
+
+        public int TimerInterval;//定时器执行周期
+
         private SingletonInfo()                                                                 
         {
             scramblernum = 0;
@@ -72,6 +75,7 @@ namespace InstructionServer
             PhysicalCode2IPDic = new Dictionary<string, IPEndPoint>();
 
             tcpsend = new TcpHelper();
+            TimerInterval = 0;
         }
 
         public static SingletonInfo GetInstance()

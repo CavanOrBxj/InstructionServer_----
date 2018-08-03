@@ -63,6 +63,8 @@ namespace InstructionServer
         private EBContentGlobal_ _EBContentGlobal;
         public delegate void LogAppendDelegate(Color color, string text);
 
+        public System.Timers.Timer timer;
+
         private int TcpReceivePort = 0;
 
 
@@ -106,6 +108,8 @@ namespace InstructionServer
                 SingletonInfo.GetInstance().ebm_id_front = ini.ReadValue("EBM", "ebm_id_front");
                 SingletonInfo.GetInstance().ebm_id_behind = ini.ReadValue("EBM", "ebm_id_behind");
                 SingletonInfo.GetInstance().ebm_id_count = Convert.ToInt32(ini.ReadValue("EBM", "ebm_id_count"));
+
+                SingletonInfo.GetInstance().TimerInterval= Convert.ToInt32(ini.ReadValue("Timer", "Interval"));
             }
             catch (Exception ex)
             {
@@ -201,6 +205,37 @@ namespace InstructionServer
             }
         }
 
+
+        private void InitTimer()
+        {
+            //设置定时间隔(毫秒为单位)
+            int interval = SingletonInfo.GetInstance().TimerInterval*1000;
+            timer = new System.Timers.Timer(interval);
+            //设置执行一次（false）还是一直执行(true)
+            timer.AutoReset = true;
+            //设置是否执行System.Timers.Timer.Elapsed事件
+            timer.Enabled = true;
+            //绑定Elapsed事件
+            timer.Elapsed += new System.Timers.ElapsedEventHandler(TimerUp);
+        }
+
+         /// <summary>
+         /// Timer类执行定时到点事件
+         /// </summary>
+         /// <param name="sender"></param>
+         /// <param name="e"></param>
+         private void TimerUp(object sender, System.Timers.ElapsedEventArgs e)
+         {
+             try
+             {
+   
+             }
+             catch (Exception ex)
+             {
+                 
+             }
+         }
+
         void EBMMain_Load(object sender, EventArgs e)
         {
 
@@ -229,6 +264,7 @@ namespace InstructionServer
             _EBContentGlobal = new EBContentGlobal_();
             DataDealHelper.MyEvent += new DataDealHelper.MyDelegate(GlobalDataDeal);
             ProcessBegin();
+            InitTimer();
         }
 
         private void GlobalDataDeal(object obj)
