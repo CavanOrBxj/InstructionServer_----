@@ -224,17 +224,36 @@ namespace InstructionServer
          /// </summary>
          /// <param name="sender"></param>
          /// <param name="e"></param>
-         private void TimerUp(object sender, System.Timers.ElapsedEventArgs e)
-         {
-             try
-             {
-   
-             }
-             catch (Exception ex)
-             {
-                 
-             }
-         }
+        private void TimerUp(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            try
+            {
+                SingleTimeServerSend(DateTime.Now);  
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void SingleTimeServerSend(DateTime time)
+        {
+            List<TimeService_> listTS = new List<TimeService_>();
+            TimeService_ select = new TimeService_();
+
+            System.Guid guid = new Guid();
+            guid = Guid.NewGuid();
+            select.ItemID = guid.ToString();
+            select.Configure = new EBConfigureTimeService();
+
+            select.Configure.Real_time = time;
+
+            select.GetSystemTime = true;
+            select.SendTick = 60;
+            listTS.Add(select);
+            DealTimeService(listTS);
+        
+        }
 
         void EBMMain_Load(object sender, EventArgs e)
         {
