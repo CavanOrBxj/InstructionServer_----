@@ -416,7 +416,7 @@ namespace InstructionServer
     {
         public string ItemID { get; set; }
         public override byte B_Daily_cmd_tag { get { return Utils.ComboBoxHelper.ConfigureRebackTag; } }
-        public EBConfigureReback Configure { get; set; }
+        public EBConfigureRebackGX Configure { get; set; }
         //public byte B_Address_type
         //{
         //    get { return Configure.B_Address_type; }

@@ -398,8 +398,21 @@ namespace InstructionServer
                             op.Data = listSUG;
                             break;
                         case "8"://RDS配置
-                            JsonstructureDeal(ref data);
-                            List<RdsConfig_> listRC = Serializer.Deserialize<List<RdsConfig_>>(data);
+                           // JsonstructureDeal(ref data);
+                              data=data.Substring(18,data.Length-18);  //特殊处理  刘工发送的json字符异常
+                              List<RdsConfig_> listRC = Serializer.Deserialize<List<RdsConfig_>>(data);
+                              string textRdsData = "";
+                              foreach (var item in data.Split(','))
+                              {
+                                  if (item.Contains("RdsDataText"))
+                                    {
+                                        textRdsData = item;
+                                    }
+                              }
+                              textRdsData = textRdsData.Substring(15);
+                              textRdsData = textRdsData.Substring(0, textRdsData.Length-4);
+                               listRC[0].Configure.Br_Rds_data = Utils.ArrayHelper.String2Bytes(textRdsData);
+                               listRC[0].RdsDataText = textRdsData;
                             op.Data = listRC;
                             break;
                     }

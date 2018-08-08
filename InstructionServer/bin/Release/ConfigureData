@@ -10,5 +10,5 @@
   "8": "null",
   "9": "null",
   "10": "null",
-  "11": "null"
+  "11": "[{\"ItemID\":\"5\",\"B_Daily_cmd_tag\":8,\"Configure\":{\"B_Rds_terminal_type\":1,\"Br_Rds_data\":\"qv/d\",\"B_Address_type\":1,\"list_Terminal_Address\":[\"451423000000000000\"]},\"RdsDataText\":\"AA FF DD\"}]"
 }

@@ -7,9 +7,9 @@ D:\GitHub\InstructionServer_----\InstructionServer\bin\Release\log4net.dll
 D:\GitHub\InstructionServer_----\InstructionServer\bin\Release\Newtonsoft.Json.dll
 D:\GitHub\InstructionServer_----\InstructionServer\bin\Release\EBMTableLib.xml
 D:\GitHub\InstructionServer_----\InstructionServer\bin\Release\Newtonsoft.Json.xml
-D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.EBMMain.resources
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.exe
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.pdb
+D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache

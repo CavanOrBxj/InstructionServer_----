@@ -1,0 +1,24 @@
+
+ 
+记录时间：2018-08-08 09:59:30,595 
+线程ID:[20] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-08-08 10:08:07,088 
+线程ID:[20] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2018-08-08 10:14:48,516 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 

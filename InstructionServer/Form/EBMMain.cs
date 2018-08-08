@@ -201,7 +201,7 @@ namespace InstructionServer
             }
             catch (Exception ex)
             {
-                this.m_consumer.Close();
+               // this.m_consumer.Close();    测试注释  20180805
             }
         }
 
@@ -283,7 +283,7 @@ namespace InstructionServer
             _EBContentGlobal = new EBContentGlobal_();
             DataDealHelper.MyEvent += new DataDealHelper.MyDelegate(GlobalDataDeal);
             ProcessBegin();
-            InitTimer();
+           // InitTimer();    测试注释  避免调试干扰  20180806
         }
 
         private void GlobalDataDeal(object obj)
