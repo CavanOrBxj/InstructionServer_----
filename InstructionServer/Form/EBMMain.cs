@@ -283,7 +283,7 @@ namespace InstructionServer
             _EBContentGlobal = new EBContentGlobal_();
             DataDealHelper.MyEvent += new DataDealHelper.MyDelegate(GlobalDataDeal);
             ProcessBegin();
-           // InitTimer();    测试注释  避免调试干扰  20180806
+            InitTimer();   // 测试注释  避免调试干扰  20180806
         }
 
         private void GlobalDataDeal(object obj)
@@ -2618,18 +2618,18 @@ namespace InstructionServer
         {
             try
             {
-                JObject jo = TableData.TableDataHelper.ReadConfig();
-                if (jo != null)
-                {
-                    EbmStream.ElementaryPid = Convert.ToInt32(jo["ElementaryPid"].ToString());
-                    EbmStream.Stream_id = Convert.ToInt32(jo["Stream_id"].ToString());
-                    EbmStream.Program_id = Convert.ToInt32(jo["Program_id"].ToString());
-                    EbmStream.PMT_Pid = Convert.ToInt32(jo["PMT_Pid"].ToString());
-                    EbmStream.Section_length = Convert.ToInt32(jo["Section_length"].ToString());
-                    EbmStream.sDestSockAddress = jo["sDestSockAddress"].ToString();
-                    EbmStream.sLocalSockAddress = jo["sLocalSockAddress"].ToString();
-                    EbmStream.Stream_BitRate = Convert.ToInt32(jo["Stream_BitRate"].ToString());
-                }
+               // JObject jo = TableData.TableDataHelper.ReadConfig();
+               // if (jo != null)
+               // {
+                    EbmStream.ElementaryPid = Convert.ToInt32(ini.ReadValue("TSSendInfo", "ElementaryPid"));
+                    EbmStream.Stream_id = Convert.ToInt32(ini.ReadValue("TSSendInfo", "Stream_id"));
+                    EbmStream.Program_id = Convert.ToInt32(ini.ReadValue("TSSendInfo", "Program_id"));
+                    EbmStream.PMT_Pid = Convert.ToInt32(ini.ReadValue("TSSendInfo", "PMT_Pid"));
+                    EbmStream.Section_length = Convert.ToInt32(ini.ReadValue("TSSendInfo", "Section_length"));
+                    EbmStream.sDestSockAddress = ini.ReadValue("TSSendInfo", "sDestSockAddress");
+                    EbmStream.sLocalSockAddress = ini.ReadValue("TSSendInfo", "sLocalSockAddress");
+                    EbmStream.Stream_BitRate = Convert.ToInt32(ini.ReadValue("TSSendInfo", "Stream_BitRate"));
+               // }
 
                // InitStreamTable();
                 InitStreamTableNew();
