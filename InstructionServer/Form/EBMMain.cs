@@ -496,7 +496,15 @@ namespace InstructionServer
                                     List_EBM_resource_codeArray[i] = tt1;
                                     break;
                                 case 12:
-                                    List_EBM_resource_codeArray[i] = "0612"+List_EBM_resource_codeArray[i] + "00";
+                                    if (SingletonInfo.GetInstance().IsGXProtocol)
+                                    {
+                                        List_EBM_resource_codeArray[i] = "0612" + List_EBM_resource_codeArray[i] + "00";
+                                    }
+                                    else
+                                    {
+                                        List_EBM_resource_codeArray[i] = "6" + List_EBM_resource_codeArray[i] + "0314000000";
+                                    }
+                                   
                                     break;
                             }
                         }
