@@ -12,7 +12,6 @@ D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionSe
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.exe
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.pdb
-D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
 E:\GitHub\InstructionServer_----\InstructionServer\bin\Release\InstructionServer.exe.config
 E:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.exe
 E:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.pdb
@@ -28,3 +27,5 @@ E:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionSe
 E:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.Properties.Resources.resources
 E:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.GenerateResource.Cache
 E:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
+D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.CoreCompileInputs.cache
+D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.CopyComplete
