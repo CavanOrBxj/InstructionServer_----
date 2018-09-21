@@ -209,7 +209,7 @@ namespace InstructionServer
         private void InitTimer()
         {
             //设置定时间隔(毫秒为单位)
-            int interval = SingletonInfo.GetInstance().TimerInterval*1000;
+            int interval = SingletonInfo.GetInstance().TimerInterval*1000*60;
             timer = new System.Timers.Timer(interval);
             //设置执行一次（false）还是一直执行(true)
             timer.AutoReset = true;
