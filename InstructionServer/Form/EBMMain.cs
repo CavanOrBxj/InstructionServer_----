@@ -1994,10 +1994,13 @@ namespace InstructionServer
             string ip = changechannelinfo.PhysicalCode.Split(':')[0];
             int port = Convert.ToInt32(changechannelinfo.PhysicalCode.Split(':')[1]);
 
-            int channelId = Convert.ToInt32(changechannelinfo.inputchannel); 
-            
+            int channelId = Convert.ToInt32(changechannelinfo.inputchannel);
+
+            string resourcecode = changechannelinfo.ResourceCode;
+
+
             IPEndPoint ie = new IPEndPoint(IPAddress.Parse(ip), port);  //临时方案
-            OnorOFFResponse res = SwitchChannel(channelId, ie);
+            OnorOFFResponse res = SwitchChannel(channelId, resourcecode, ie);
             //if (SingletonInfo.GetInstance().PhysicalCode2IPDic.ContainsKey(changechannelinfo.PhysicalCode))
             //{
             //    ie = SingletonInfo.GetInstance().PhysicalCode2IPDic[changechannelinfo.PhysicalCode];
@@ -3045,7 +3048,7 @@ namespace InstructionServer
         }
 
 
-        private OnorOFFResponse SwitchChannel(int channelID,IPEndPoint ie)
+        private OnorOFFResponse SwitchChannel(int channelID,string ResourceCode,IPEndPoint ie)
         {
 
             OnorOFFBroadcast tt = new OnorOFFBroadcast();
@@ -3059,7 +3062,7 @@ namespace InstructionServer
             tt.volume = "80";
             tt.resource_code_type = "1";
             tt.resource_codeList = new List<string>();
-            tt.resource_codeList.Add("000000000000000000");
+            tt.resource_codeList.Add(ResourceCode);
             tt.input_channel_id = channelID;
             OnorOFFResponse resopnse = (OnorOFFResponse)SingletonInfo.GetInstance().tcpsend.SendTCPCommnand(tt, 0x04, ie);
             return resopnse;

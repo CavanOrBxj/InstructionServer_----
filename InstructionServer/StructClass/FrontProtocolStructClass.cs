@@ -262,8 +262,15 @@ namespace InstructionServer
     public class CountyplatformChangechannel
     {   //输入通道号 1-8
         public string inputchannel { get; set; }
-        //乡镇适配器物理码
+        //乡镇适配器物理码  后改为ip和端口
         public string PhysicalCode { get; set; }
+
+        /// <summary>
+        /// 资源码
+        /// </summary>
+        public string ResourceCode { get; set; }
+
+
     }
          
 }

@@ -29,3 +29,4 @@ E:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionSe
 E:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csprojResolveAssemblyReference.cache
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.CoreCompileInputs.cache
 D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.CopyComplete
+D:\GitHub\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csprojAssemblyReference.cache

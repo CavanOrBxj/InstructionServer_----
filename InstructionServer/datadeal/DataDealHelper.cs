@@ -761,6 +761,7 @@ namespace InstructionServer
                     CountyplatformChangechannel changechannelinfo = new CountyplatformChangechannel();
                     changechannelinfo.inputchannel = map["inputchannel"].ToString();
                     changechannelinfo.PhysicalCode =map["PhysicalCode"].ToString();
+                    changechannelinfo.ResourceCode= map["ResourceCode"].ToString();
                     op.Data = (object)changechannelinfo;
                     break;
             }
