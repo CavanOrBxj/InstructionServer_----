@@ -759,9 +759,10 @@ namespace InstructionServer
             {
                 case "ChangeInutChannel":
                     CountyplatformChangechannel changechannelinfo = new CountyplatformChangechannel();
-                    changechannelinfo.inputchannel = map["inputchannel"].ToString();
-                    changechannelinfo.PhysicalCode =map["PhysicalCode"].ToString();
-                    changechannelinfo.ResourceCode= map["ResourceCode"].ToString();
+                    changechannelinfo.inputchannel = map["inputchannel"].ToString().Trim();
+                    changechannelinfo.PhysicalCode =map["PhysicalCode"].ToString().Trim();
+                    //changechannelinfo.PhysicalCode = "192.168.3.233:5005";
+                    changechannelinfo.ResourceCode= map["ResourceCode"].ToString().Trim();
                     op.Data = (object)changechannelinfo;
                     break;
             }

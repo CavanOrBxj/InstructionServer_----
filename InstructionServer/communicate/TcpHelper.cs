@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Web.Script.Serialization;
+using System.Windows.Forms;
 
 namespace InstructionServer
 {
@@ -374,11 +375,11 @@ namespace InstructionServer
             byte[] crcdata = CRC32.GetCRC32(senddata.ToArray());
             senddata.AddRange(crcdata);
 
-            string data = "";
-            foreach (byte item in senddata.ToArray())
-            {
-                data += item.ToString("X2").PadLeft(2, '0').ToUpper() + " ";
-            }
+            //string data = "";
+            //foreach (byte item in senddata.ToArray())
+            //{
+            //    data += item.ToString("X2").PadLeft(2, '0').ToUpper() + " ";
+            //}
             return senddata.ToArray();
         }
 

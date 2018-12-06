@@ -102,6 +102,7 @@ namespace InstructionServer
                 tmp.PubKey = SingletonInfo.GetInstance().PubKey;
                 SingletonInfo.GetInstance().Cert_Index = SingletonInfo.GetInstance().InlayCA.AddEBCert(tmp);
                 #endregion
+
                 TcpReceivePort = Convert.ToInt32(ini.ReadValue("TCP", "ReceivePort"));
                 SingletonInfo.GetInstance().LocalHost = ini.ReadValue("LocalHost", "IP");
 
@@ -165,7 +166,7 @@ namespace InstructionServer
             try
             {
                 m_mq = new MQ();
-                m_mq.uri = "tcp://" + ini.ReadValue("MQ", "MQIP") + ":" + ini.ReadValue("MQ", "MQPORT");
+                m_mq.uri = "failover:tcp://" + ini.ReadValue("MQ", "MQIP") + ":" + ini.ReadValue("MQ", "MQPORT");
                 m_mq.username = "admin";
                 m_mq.password = "admin";
                 m_mq.Start();
@@ -355,7 +356,6 @@ namespace InstructionServer
             }
             catch (Exception ex)
             {
-
                 LogHelper.WriteLog(typeof(EBMMain), ex.ToString());
             }
            
@@ -2453,9 +2453,7 @@ namespace InstructionServer
                                 else
                                 {
                                     cmd.Add((d as ContentRealMoniter_).Configure.GetCmd());
-                                }
-
-                              
+                                }                             
                                 break;
                             case Utils.ComboBoxHelper.ConfigureStatusRetbackTag:
                                 cmd.Add((d as StatusRetback_).Configure.GetCmd());
@@ -2720,9 +2718,6 @@ namespace InstructionServer
         
         }
 
-     
-
-
         /// <summary>
         /// 更新屏幕打印  
         /// </summary>
@@ -2774,10 +2769,6 @@ namespace InstructionServer
                 int num = 0;
                 EbmStream.EB_Index_Table.BuildEbIndexSection();
                 byte[] body=new byte[] { };
-
-
-
-
                 do
                 {
                     Thread.Sleep(800);
@@ -3050,7 +3041,6 @@ namespace InstructionServer
 
         private OnorOFFResponse SwitchChannel(int channelID,string ResourceCode,IPEndPoint ie)
         {
-
             OnorOFFBroadcast tt = new OnorOFFBroadcast();
             tt.ebm_class = "4";
             tt.ebm_id = SingletonInfo.GetInstance().tcpsend.CreateEBM_ID();
@@ -3064,6 +3054,7 @@ namespace InstructionServer
             tt.resource_codeList = new List<string>();
             tt.resource_codeList.Add(ResourceCode);
             tt.input_channel_id = channelID;
+          
             OnorOFFResponse resopnse = (OnorOFFResponse)SingletonInfo.GetInstance().tcpsend.SendTCPCommnand(tt, 0x04, ie);
             return resopnse;
 
