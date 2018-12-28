@@ -18,7 +18,8 @@ namespace InstructionServer
 
         public int InlayCAType;//内置CA的类型  1表示EbMSGCASignature  2表示EbMSGPLSignature
 
-        public bool IsUseCAInfo;//表明是否启用CA  true表示启用  false表示不启用
+        public bool IsUseCAInfo;//表明是否启用CA(签名)  true表示启用  false表示不启用
+       
 
         public EbmSignature InlayCA;
 

@@ -88,7 +88,7 @@ namespace InstructionServer
             try
             {
                 SingletonInfo.GetInstance().cramblertype = ini.ReadValue("Scrambler", "ScramblerType");
-                SingletonInfo.GetInstance().IsGXProtocol = ini.ReadValue("ProtocolType", "ProtocolType") == "1" ? true : false;//“1”表示广西协议 2表示国标
+                SingletonInfo.GetInstance().IsGXProtocol = ini.ReadValue("ProtocolType", "ProtocolType") == "1" ? true : false;//-
 
                 #region AddCertInfo
                 SingletonInfo.GetInstance().IsUseAddCert = ini.ReadValue("AddCertInfo", "IsUseAddCert") == "1" ? true : false;//“1”表示使用增加的证书 2表示不使用增加证书信息
@@ -111,6 +111,9 @@ namespace InstructionServer
                 SingletonInfo.GetInstance().ebm_id_count = Convert.ToInt32(ini.ReadValue("EBM", "ebm_id_count"));
 
                 SingletonInfo.GetInstance().TimerInterval= Convert.ToInt32(ini.ReadValue("Timer", "Interval"));
+
+                SingletonInfo.GetInstance().IsUseCAInfo = ini.ReadValue("EBMInfo", "IsUseCA") == "1" ? true : false;//修改于20181226
+               // SingletonInfo.GetInstance().InlayCA.SignCounter= Convert.ToInt32(ini.ReadValue("EBMInfo", "SignCounter"));//修改于20181226
             }
             catch (Exception ex)
             {
@@ -191,8 +194,6 @@ namespace InstructionServer
             iocp.mainForm = this;
         }
 
-
-
         private void consumer_listener(IMessage message)
         {
             try
@@ -205,7 +206,6 @@ namespace InstructionServer
                // this.m_consumer.Close();    测试注释  20180805
             }
         }
-
 
         private void InitTimer()
         {
@@ -258,7 +258,6 @@ namespace InstructionServer
 
         void EBMMain_Load(object sender, EventArgs e)
         {
-
             CheckIniConfig();
             InitConfig();
             IsStartStream = false;
@@ -269,14 +268,10 @@ namespace InstructionServer
             calcel.MyEvent += new Calcle.MyDelegate(NetErrorDeal);
             InitStreamTableNew();
             InitTCPServer();
-
-
             Gtoken = new object();
             ConnectMQServer();
             dataHelper = new DataDealHelper();
-
             dataHelperreal = new DataHelper();
-
             _CertAuthGlobal = new CertAuthGlobal_();
             _EBMIndexGlobal = new EBMIndexGlobal_();
             _EBMConfigureGlobal = new EBMConfigureGlobal_();
@@ -416,7 +411,6 @@ namespace InstructionServer
             UpdateDataTextNew((object)1);
         }
 
-
         private void DelAreaEBMIndex2Global(ModifyEBMIndex modify)
         {
             lock (Gtoken)
@@ -478,8 +472,7 @@ namespace InstructionServer
 
                     string[] List_EBM_resource_codeArray = EBMIndex.List_EBM_resource_code.Split(',');
                     //gan
-                    if (SingletonInfo.GetInstance().IsGXProtocol)
-                    {
+                   
                         for (int i = 0; i < List_EBM_resource_codeArray.Length; i++)
                         {
                             int resource_code_length = List_EBM_resource_codeArray[i].Length;
@@ -496,19 +489,19 @@ namespace InstructionServer
                                     List_EBM_resource_codeArray[i] = tt1;
                                     break;
                                 case 12:
-                                    if (SingletonInfo.GetInstance().IsGXProtocol)
-                                    {
-                                        List_EBM_resource_codeArray[i] = "0612" + List_EBM_resource_codeArray[i] + "00";
-                                    }
-                                    else
-                                    {
-                                        List_EBM_resource_codeArray[i] = "6" + List_EBM_resource_codeArray[i] + "0314000000";
-                                    }
+                                if (SingletonInfo.GetInstance().IsGXProtocol)
+                                {
+                                    List_EBM_resource_codeArray[i] = "0612" + List_EBM_resource_codeArray[i] + "00";
+                                }
+                                else
+                                {
+                                    List_EBM_resource_codeArray[i] = "F6" + List_EBM_resource_codeArray[i] + "0314000000";
+                                }
                                    
                                     break;
                             }
                         }
-                    }
+                    
 
                     index.List_EBM_resource_code = new List<string>(List_EBM_resource_codeArray);
                     //foreach (string item in EBMIndex.List_EBM_resource_code.Split(','))
@@ -574,7 +567,7 @@ namespace InstructionServer
                     EbmStream.EB_Index_Table = GetEBIndexTable(ref EB_Index_Table) ? EB_Index_Table : null;
                     EbMStream.Initialization();
                 }
-              //  UpdateDataTextNew((object)1);
+               UpdateDataTextNew((object)1);
               //  GC.Collect();
             }
             catch (Exception ex)
@@ -678,8 +671,6 @@ namespace InstructionServer
         #endregion 
 
         #region EBMConfigure 数据处理
-
-
         private void DealEBMConfigure2Global(OperatorData op)
         {
             switch (op.OperatorType)
@@ -1904,7 +1895,6 @@ namespace InstructionServer
         #endregion
 
         #region EBContent 数据处理
-
         private void DealEBContent2Global(OperatorData op)
         {
             switch (op.OperatorType)
@@ -1960,7 +1950,6 @@ namespace InstructionServer
             }
         }
 
-
         private void DelEBContent2Global(OperatorData op)
         {
             List<string> DelItemList = new List<string>(op.Data.ToString().Split(','));
@@ -2011,7 +2000,6 @@ namespace InstructionServer
 
         }
         #endregion
-
 
         public bool GetCertAuthTable(ref EBCertAuthTable oldTable)
         {
@@ -2495,6 +2483,7 @@ namespace InstructionServer
                 return null;
             }
         }
+
         private void InitAllGlobalData()
         {
             var joCertAuth = TableData.TableDataHelper.ReadTable(Enums.TableType.CertAuth);//从配置文件中读取数据
@@ -2760,7 +2749,6 @@ namespace InstructionServer
             }
         }
 
-
         private void EB_IndexScreenPrint()
         {
             if (EbmStream.EB_Index_Table != null)
@@ -3000,14 +2988,11 @@ namespace InstructionServer
         {
             LayoutMdi(MdiLayout.Cascade);
         }
-
-      
-
         #endregion
 
         private void EBMMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            ini.WriteValue("EBMInfo", "IsCASet", "0");
+          
             if (EbmStream != null && IsStartStream)
             {
                 EbmStream.StopStreaming();
@@ -3043,7 +3028,7 @@ namespace InstructionServer
         {
             OnorOFFBroadcast tt = new OnorOFFBroadcast();
             tt.ebm_class = "4";
-            tt.ebm_id = SingletonInfo.GetInstance().tcpsend.CreateEBM_ID();
+            tt.ebm_id = BBSHelper.CreateEBM_ID();
             tt.ebm_level = "2";
             tt.ebm_type = "00000";
             tt.end_time = DateTime.Now.AddHours(5).ToString("yyyy-MM-dd HH:mm:ss");

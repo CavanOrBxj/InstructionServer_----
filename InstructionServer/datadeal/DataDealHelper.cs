@@ -128,26 +128,24 @@ namespace InstructionServer
                 case "AddEBMIndex":
                     EBMIndexTmp tmp = new EBMIndexTmp();
                     tmp.BL_details_channel_indicate = map["BL_details_channel_indicate"].ToString();
-                    tmp.IndexItemID = map["IndexItemID"].ToString();
-                    tmp.S_EBM_id = map["S_EBM_id"].ToString().Substring(0, 30);
-                    #region   特殊处理EBM_ID 凑到30个长度
-                    //if (map["S_EBM_id"].ToString().Length < 30)
-                    //{
-                    //    tmp.IndexItemID = map["S_EBM_id"].ToString() + "000000000000";
-                    //}
-                    //else
-                    //{
-                    //    tmp.S_EBM_id = map["S_EBM_id"].ToString().Substring(0, 30);
-                    //}
-                    #endregion
-
-
+                    tmp.IndexItemID = map["IndexItemID"].ToString();                
 
                     tmp.S_EBM_original_network_id = (SingletonInfo.GetInstance().OriginalNetworkId + 1).ToString();
                     tmp.S_EBM_start_time = map["S_EBM_start_time"].ToString();
                     tmp.S_EBM_end_time = map["S_EBM_end_time"].ToString();
                     tmp.S_EBM_type = map["S_EBM_type"].ToString();
-                    tmp.S_EBM_class = map["S_EBM_class"].ToString();
+                    if (!SingletonInfo.GetInstance().IsGXProtocol)
+                    {
+                        //国标  测试数据  20181227
+                        tmp.S_EBM_class = map["S_EBM_class"].ToString();
+                        tmp.S_EBM_id = "F" + BBSHelper.CreateEBM_ID(); 
+                    }
+                    else
+                    {
+                        tmp.S_EBM_class = map["S_EBM_class"].ToString();
+                        tmp.S_EBM_id = map["S_EBM_id"].ToString().Substring(0, 30);
+                    }
+                   // tmp.S_EBM_class = map["S_EBM_class"].ToString();
                     tmp.S_EBM_level = map["S_EBM_level"].ToString();
                     tmp.List_EBM_resource_code = map["List_EBM_resource_code"].ToString();
                   
@@ -233,11 +231,16 @@ namespace InstructionServer
 
                             //修改于20180530
                             item.Descriptor2 = null;
-
-                            if (item.B_stream_type=="84")
+                            //测试注释20181227
+                            //if (item.B_stream_type=="84")
+                            //{
+                            //    item.B_stream_type = "03";
+                            //}
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                item.B_stream_type = "03";
+                                item.B_stream_type = "00";
                             }
+                           
                         }
                         tmp.List_ProgramStreamInfo = objs;
 
@@ -526,11 +529,7 @@ namespace InstructionServer
                                     pp.Program.list_Terminal_Address = new List<string>(array);
                                 }
                             }
-
-
-
-
-
+                            
                             List<ChangeProgram_> listCP = new List<ChangeProgram_>();
                             listCP.Add(pp);
 
@@ -693,9 +692,7 @@ namespace InstructionServer
                             List<RdsTransfer_> listRT = Serializer.Deserialize<List<RdsTransfer_>>(data);
                             op.Data = listRT;
                             break;
-
                     }
-
                     break;
 
                 case "DelDailyBroadcast":
@@ -706,23 +703,6 @@ namespace InstructionServer
             DataDealHelper.MyEvent(op);
         }
 
-        public void TestFunc1()
-        {
-            string packetype = "DelDailyBroadcast";
-            OperatorData op = new OperatorData();
-            op.OperatorType = packetype;
-            op.ModuleType = "1";
-            JavaScriptSerializer Serializer = new JavaScriptSerializer();
-
-            switch (packetype)
-            {
-                case "DelDailyBroadcast":
-                    string ItemList = "72076";
-                    op.Data = ItemList;
-                    break;
-            }
-            DataDealHelper.MyEvent(op);
-        }
 
         private void AnalysisEBContentData(IPrimitiveMap map)
         {

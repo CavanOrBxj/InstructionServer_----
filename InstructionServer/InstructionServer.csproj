@@ -46,7 +46,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>
     </DefineConstants>
@@ -96,17 +96,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="datadeal\BBSHelper.cs" />
     <Compile Include="datadeal\Calcle.cs" />
     <Compile Include="datadeal\ComboBind.cs" />
     <Compile Include="communicate\IoContextPool.cs" />
     <Compile Include="communicate\IoServer.cs" />
     <Compile Include="communicate\TcpHelper.cs" />
-    <Compile Include="Controls\DataGridViewSysTimeColumn.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\DataGridViewSysTimeDelayColumn.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Controls\DataGridViewSysTimeColumn.cs" />
+    <Compile Include="Controls\DataGridViewSysTimeDelayColumn.cs" />
     <Compile Include="datadeal\DataDealHelper.cs" />
     <Compile Include="datadeal\CRC16CITT.cs" />
     <Compile Include="datadeal\CRC32.cs" />
