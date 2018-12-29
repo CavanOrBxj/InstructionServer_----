@@ -136,8 +136,14 @@ namespace InstructionServer
                     tmp.S_EBM_type = map["S_EBM_type"].ToString();
                     if (!SingletonInfo.GetInstance().IsGXProtocol)
                     {
-                        //国标  测试数据  20181227
-                        tmp.S_EBM_class = map["S_EBM_class"].ToString();
+                        if (map["S_EBM_class"].ToString() == "0005")
+                        {
+                            tmp.S_EBM_class = "0004";
+                        }
+                        else
+                        {
+                            tmp.S_EBM_class = map["S_EBM_class"].ToString();
+                        }
                         tmp.S_EBM_id = "F" + BBSHelper.CreateEBM_ID(); 
                     }
                     else
@@ -232,15 +238,18 @@ namespace InstructionServer
                             //修改于20180530
                             item.Descriptor2 = null;
                             //测试注释20181227
-                            //if (item.B_stream_type=="84")
-                            //{
-                            //    item.B_stream_type = "03";
-                            //}
+                          
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
                                 item.B_stream_type = "00";
                             }
-                           
+                            else
+                            {
+                                if (item.B_stream_type == "84")
+                                {
+                                    item.B_stream_type = "03";
+                                }
+                            }
                         }
                         tmp.List_ProgramStreamInfo = objs;
 
@@ -332,23 +341,49 @@ namespace InstructionServer
                                 }
                             }
                             List<TimeService_> listTS = new List<TimeService_>();
+                            
                             listTS.Add(pp);
+                            
                             op.Data = listTS;
                             break;
                         case "2"://2区域码设置
                             JsonstructureDeal(ref data);
 
                             List<SetAddress_> listSA = Serializer.Deserialize<List<SetAddress_>>(data);
+                            
                             op.Data = listSA;
                             break;
                         case "3"://工作模式设置
                             JsonstructureDeal(ref data);
                             List<WorkMode_> listWM = Serializer.Deserialize<List<WorkMode_>>(data);
+
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (WorkMode_ item in listWM)
+                                {
+                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
                             op.Data = listWM;
                             break;
                         case "4"://锁定频率设置
                             JsonstructureDeal(ref data);
                             List<MainFrequency_> listMF = Serializer.Deserialize<List<MainFrequency_>>(data);
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (MainFrequency_ item in listMF)
+                                {
+                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
                             op.Data = listMF;
                             break;
                         case "5"://回传方式设置
@@ -358,21 +393,67 @@ namespace InstructionServer
                             string tmp1 = data.Replace("\"S_reback_address_backup\":,", "\"S_reback_address_backup\":\"null\",");
                             string tmp2 = tmp1.Replace("\"I_reback_port_Backup\":,", "\"I_reback_port_Backup\":0,");
                             List<Reback_> listRB = Serializer.Deserialize<List<Reback_>>(tmp2);
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (Reback_ item in listRB)
+                                {
+                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
                             op.Data = listRB;
                             break;
                         case "6"://默认音量设置
                             JsonstructureDeal(ref data);
                             List<DefaltVolume_> listDV = Serializer.Deserialize<List<DefaltVolume_>>(data);
+
+
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (DefaltVolume_ item in listDV)
+                                {
+                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
                             op.Data = listDV;
                             break;
                         case "7"://回传周期设置
                             JsonstructureDeal(ref data);
                             List<RebackPeriod_> listRP = Serializer.Deserialize<List<RebackPeriod_>>(data);
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (RebackPeriod_ item in listRP)
+                                {
+                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
                             op.Data = listRP;
                             break;
                         case "104"://启动内容检测指令
                             JsonstructureDeal(ref data);
                             List<ContentMoniterRetback_> listCMR = Serializer.Deserialize<List<ContentMoniterRetback_>>(data);
+
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (ContentMoniterRetback_ item in listCMR)
+                                {
+                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
                             op.Data = listCMR;
                             break;
                         case "105"://启动内容监测实时监听指令
@@ -385,6 +466,17 @@ namespace InstructionServer
                             else
                             {
                                 List<ContentRealMoniter_> listCRM = Serializer.Deserialize<List<ContentRealMoniter_>>(data);
+
+                                
+                                    foreach (ContentRealMoniter_ item in listCRM)
+                                    {
+                                        for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                        {
+                                            item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                        }
+                                    }
+                                
+
                                 op.Data = listCRM;
                             }
                             break;
@@ -393,11 +485,36 @@ namespace InstructionServer
 
                               // data.IndexOf(',')
                             List<StatusRetback_> listSR = Serializer.Deserialize<List<StatusRetback_>>(data);
+
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (StatusRetback_ item in listSR)
+                                {
+                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
                             op.Data = listSR;
                             break;
                         case "240"://终端固件升级
                             JsonstructureDeal(ref data);
                             List<SoftwareUpGrade_> listSUG = Serializer.Deserialize<List<SoftwareUpGrade_>>(data);
+
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (SoftwareUpGrade_ item in listSUG)
+                                {
+                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
+
                             op.Data = listSUG;
                             break;
                         case "8"://RDS配置
@@ -416,6 +533,18 @@ namespace InstructionServer
                               textRdsData = textRdsData.Substring(0, textRdsData.Length-4);
                                listRC[0].Configure.Br_Rds_data = Utils.ArrayHelper.String2Bytes(textRdsData);
                                listRC[0].RdsDataText = textRdsData;
+
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (RdsConfig_ item in listRC)
+                                {
+                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
                             op.Data = listRC;
                             break;
                     }
@@ -533,21 +662,67 @@ namespace InstructionServer
                             List<ChangeProgram_> listCP = new List<ChangeProgram_>();
                             listCP.Add(pp);
 
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (ChangeProgram_ item in listCP)
+                                {
+                                    for (int i = 0; i < item.Program.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Program.list_Terminal_Address[i] = "F6" + item.Program.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
                             op.Data = listCP;
                             break;
                         case "3"://播放控制
                             JsonstructureDeal(ref data);
                             List<PlayCtrl_> listPC = Serializer.Deserialize<List<PlayCtrl_>>(data);
+
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (PlayCtrl_ item in listPC)
+                                {
+                                    for (int i = 0; i < item.Program.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Program.list_Terminal_Address[i] = "F6" + item.Program.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
+
                             op.Data = listPC;
                             break;
                         case "4"://输出控制
                             JsonstructureDeal(ref data);
                             List<OutSwitch_> listOS = Serializer.Deserialize<List<OutSwitch_>>(data);
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (OutSwitch_ item in listOS)
+                                {
+                                    for (int i = 0; i < item.Program.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Program.list_Terminal_Address[i] = "F6" + item.Program.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
                             op.Data = listOS;
                             break;
                         case "5"://RDS编码数据透传
                             JsonstructureDeal(ref data);
                             List<RdsTransfer_> listRT = Serializer.Deserialize<List<RdsTransfer_>>(data);
+
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                foreach (RdsTransfer_ item in listRT)
+                                {
+                                    for (int i = 0; i < item.Program.list_Terminal_Address.Count; i++)
+                                    {
+                                        item.Program.list_Terminal_Address[i] = "F6" + item.Program.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                    }
+                                }
+                            }
+
                             op.Data = listRT;
                             break;
 
@@ -719,6 +894,14 @@ namespace InstructionServer
                     string dataAdd = map["data"].ToString();
                     JsonstructureDeal(ref dataAdd);
                     List<EBMID_Content> listEBContent_ = Serializer.Deserialize<List<EBMID_Content>>(dataAdd);
+
+                    if (!SingletonInfo.GetInstance().IsGXProtocol)
+                    {
+                        for (int i = 0; i < listEBContent_.Count; i++)
+                        {
+                            listEBContent_[i].EBM_ID = BBSHelper.CreateEBM_ID();
+                        }
+                    }
                     op.Data = (object)listEBContent_;
                     break;
 

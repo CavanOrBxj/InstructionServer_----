@@ -48,3 +48,4 @@ E:\GitHub\TS指令服务\InstructionServer_----\InstructionServer\obj\x86\Releas
 E:\GitHub\TS指令服务\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csproj.CopyComplete
 E:\GitHub\TS指令服务\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.exe
 E:\GitHub\TS指令服务\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.pdb
+E:\GitHub\TS指令服务\InstructionServer_----\InstructionServer\obj\x86\Release\InstructionServer.csprojAssemblyReference.cache

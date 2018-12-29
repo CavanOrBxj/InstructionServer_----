@@ -1,0 +1,8 @@
+
+ 
+记录时间：2018-12-29 08:56:25,242 
+线程ID:[14] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
