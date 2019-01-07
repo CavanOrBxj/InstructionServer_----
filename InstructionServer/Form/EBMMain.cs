@@ -280,6 +280,7 @@ namespace InstructionServer
             DataDealHelper.MyEvent += new DataDealHelper.MyDelegate(GlobalDataDeal);
             ProcessBegin();
             InitTimer();   // 测试注释  避免调试干扰  20180806
+            this.Text = "TS指令服务_V" + Application.ProductVersion;
         }
 
         private void GlobalDataDeal(object obj)
@@ -353,8 +354,6 @@ namespace InstructionServer
             {
                 LogHelper.WriteLog(typeof(EBMMain), ex.ToString());
             }
-           
-           
         }
 
         #region  EBMIndex 数据处理
@@ -408,7 +407,7 @@ namespace InstructionServer
                 EbmStream.SignatureCallbackRef = new EBMStream.SignatureCallBackDelegateRef(calcel.SignatureFunc);
                 EbMStream.Initialization();
             }
-            UpdateDataTextNew((object)1);
+         //   UpdateDataTextNew((object)1);
         }
 
         private void DelAreaEBMIndex2Global(ModifyEBMIndex modify)
@@ -432,7 +431,7 @@ namespace InstructionServer
                 EbmStream.SignatureCallbackRef = new EBMStream.SignatureCallBackDelegateRef(calcel.SignatureFunc);
                 EbMStream.Initialization();
             }
-            UpdateDataTextNew((object)1);
+           // UpdateDataTextNew((object)1);
         }
 
         private void DealEBMIndex2Global(EBMIndexTmp EBMIndex)
@@ -468,11 +467,8 @@ namespace InstructionServer
                     index.List_EBM_resource_code = new List<string>();
 
                     ///注：通讯库不支持 List的Add模式 
-                    ///
-
                     string[] List_EBM_resource_codeArray = EBMIndex.List_EBM_resource_code.Split(',');
-                    //gan
-                   
+                  
                         for (int i = 0; i < List_EBM_resource_codeArray.Length; i++)
                         {
                             int resource_code_length = List_EBM_resource_codeArray[i].Length;
@@ -529,21 +525,14 @@ namespace InstructionServer
                             if (S_elementary_PID.Contains(","))
                             {
                                 string[] pidarray = S_elementary_PID.Split(',');
-
-
                                 EBMIndex.List_ProgramStreamInfo[i].S_elementary_PID = pidarray[0];
-
                                 EBMIndex.List_ProgramStreamInfo[i].B_stream_type = "3";
-
-
-
                                 ProgramStreamInfotmp add = new ProgramStreamInfotmp();
                                 add.B_stream_type = "1";
                                 add.Descriptor2 = null;
                                 //add.Descriptor2
                                 add.S_elementary_PID = pidarray[1];
                                 List_ProgramStreamInfotmp.Add(add);
-
                             }
                         }
 
@@ -567,15 +556,13 @@ namespace InstructionServer
                     EbmStream.EB_Index_Table = GetEBIndexTable(ref EB_Index_Table) ? EB_Index_Table : null;
                     EbMStream.Initialization();
                 }
-               UpdateDataTextNew((object)1);
+              // UpdateDataTextNew((object)1);
               //  GC.Collect();
             }
             catch (Exception ex)
             {
-
                 LogHelper.WriteLog(typeof(EBMMain), ex.ToString()); 
             }
-          
         }
 
         public List<ProgramStreamInfo> GetDataPSI(List<ProgramStreamInfotmp> input)
@@ -698,8 +685,17 @@ namespace InstructionServer
                             DealMainFrequency(listMF);
                             break;
                         case "5":
-                            List<Reback_> listRB = (List<Reback_>)op.Data;
-                            DealReback(listRB);
+                            if (SingletonInfo.GetInstance().IsGXProtocol)
+                            {
+                                List<Reback_> listRB = (List<Reback_>)op.Data;
+                                DealReback(listRB);
+                            }
+                            else
+                            {
+                                List<Reback_Nation> listRB = (List<Reback_Nation>)op.Data;
+                                DealReback_Nation(listRB);
+                            }
+                           
                             break;
                         case "6":
                             List<DefaltVolume_> listDV = (List<DefaltVolume_>)op.Data;
@@ -724,7 +720,6 @@ namespace InstructionServer
                                 List<ContentRealMoniter_> listCRM = (List<ContentRealMoniter_>)op.Data;
                                 DealContentRealMoniter(listCRM);
                             }
-                            
                             break;
                         case "106":
                             List<StatusRetback_> listSR = (List<StatusRetback_>)op.Data;
@@ -925,9 +920,7 @@ namespace InstructionServer
                         {
                             _EBMConfigureGlobal.ListReback.Remove(tmp);
                         }
-
                     }
-
                 }
                 else
                 {
@@ -938,7 +931,6 @@ namespace InstructionServer
                 {
                     _EBMConfigureGlobal.ListReback.Add(item);
                 }
-
                 EbmStream.EB_Configure_Table = GetConfigureTable(ref EB_Configure_Table, false) ? EB_Configure_Table : null;
                 EbMStream.Initialization();
             }
@@ -952,9 +944,49 @@ namespace InstructionServer
             #endregion
         }
 
-        private void DealDefaltVolume(List<DefaltVolume_> listDV)
+
+        private void DealReback_Nation(List<Reback_Nation> listRB)
         {
 
+            lock (Gtoken)
+            {
+                if (_EBMConfigureGlobal.ListReback != null)
+                {
+                    //去同项
+                    foreach (Reback_Nation item in listRB)
+                    {
+                        Reback_Nation tmp = _EBMConfigureGlobal.ListReback_Nation.Find(s => s.ItemID.Equals(item.ItemID));
+                        if (tmp != null)
+                        {
+                            _EBMConfigureGlobal.ListReback_Nation.Remove(tmp);
+                        }
+                    }
+                }
+                else
+                {
+                    _EBMConfigureGlobal.ListReback_Nation = new List<Reback_Nation>();
+                }
+                //增新项
+                foreach (Reback_Nation item in listRB)
+                {
+                    _EBMConfigureGlobal.ListReback_Nation.Add(item);
+                }
+
+                EbmStream.EB_Configure_Table = GetConfigureTable(ref EB_Configure_Table, false) ? EB_Configure_Table : null;
+                EbMStream.Initialization();
+            }
+            UpdateDataTextNew((object)3);
+            #region 删除记录
+            //增新项
+            foreach (Reback_Nation item in listRB)
+            {
+                _EBMConfigureGlobal.ListReback_Nation.Remove(item);
+            }
+            #endregion
+        }
+
+        private void DealDefaltVolume(List<DefaltVolume_> listDV)
+        {
             lock (Gtoken)
             {
                 if (_EBMConfigureGlobal.ListDefaltVolume != null)
@@ -967,9 +999,7 @@ namespace InstructionServer
                         {
                             _EBMConfigureGlobal.ListDefaltVolume.Remove(tmp);
                         }
-
                     }
-
                 }
                 else
                 {
@@ -985,7 +1015,6 @@ namespace InstructionServer
                 EbMStream.Initialization();
             }
             UpdateDataTextNew((object)3);
-
             #region 删除记录
             foreach (DefaltVolume_ item in listDV)
             {
@@ -996,7 +1025,6 @@ namespace InstructionServer
 
         private void DealRebackPeriod(List<RebackPeriod_> listRP)
         {
-
             lock (Gtoken)
             {
                 if (_EBMConfigureGlobal.ListRebackPeriod != null)
@@ -1009,9 +1037,7 @@ namespace InstructionServer
                         {
                             _EBMConfigureGlobal.ListRebackPeriod.Remove(tmp);
                         }
-
                     }
-
                 }
                 else
                 {
@@ -1022,7 +1048,6 @@ namespace InstructionServer
                 {
                     _EBMConfigureGlobal.ListRebackPeriod.Add(item);
                 }
-
                 EbmStream.EB_Configure_Table = GetConfigureTable(ref EB_Configure_Table, false) ? EB_Configure_Table : null;
                 EbMStream.Initialization();
             }
@@ -1037,7 +1062,6 @@ namespace InstructionServer
 
         private void DealContentMoniterRetback(List<ContentMoniterRetback_> listCMR)
         {
-
             lock (Gtoken)
             {
                 if (_EBMConfigureGlobal.ListContentMoniterRetback != null)
@@ -1050,21 +1074,17 @@ namespace InstructionServer
                         {
                             _EBMConfigureGlobal.ListContentMoniterRetback.Remove(tmp);
                         }
-
                     }
-
                 }
                 else
                 {
                     _EBMConfigureGlobal.ListContentMoniterRetback = new List<ContentMoniterRetback_>();
                 }
-
                 //增新项
                 foreach (ContentMoniterRetback_ item in listCMR)
                 {
                     _EBMConfigureGlobal.ListContentMoniterRetback.Add(item);
                 }
-
                 EbmStream.EB_Configure_Table = GetConfigureTable(ref EB_Configure_Table, false) ? EB_Configure_Table : null;
                 EbMStream.Initialization();
             }
@@ -1080,7 +1100,6 @@ namespace InstructionServer
 
         private void DealContentRealMoniter(List<ContentRealMoniter_> listCRM)
         {
-
             lock (Gtoken)
             {
                 if (_EBMConfigureGlobal.ListContentRealMoniter != null)
@@ -1093,9 +1112,7 @@ namespace InstructionServer
                         {
                             _EBMConfigureGlobal.ListContentRealMoniter.Remove(tmp);
                         }
-
                     }
-
                 }
                 else
                 {
@@ -1111,13 +1128,10 @@ namespace InstructionServer
                 EbMStream.Initialization();
             }
             UpdateDataTextNew((object)3);
-
-          
         }
 
         private void DealContentRealMoniterGX(List<ContentRealMoniterGX_> listCRM)
         {
-
             lock (Gtoken)
             {
                 if (_EBMConfigureGlobal.ListContentRealMoniterGX != null)
@@ -1130,9 +1144,7 @@ namespace InstructionServer
                         {
                             _EBMConfigureGlobal.ListContentRealMoniterGX.Remove(tmp);
                         }
-
                     }
-
                 }
                 else
                 {
@@ -1158,7 +1170,6 @@ namespace InstructionServer
 
         private void DealStatusRetback(List<StatusRetback_> listSR)
         {
-
             lock (Gtoken)
             {
                 if (_EBMConfigureGlobal.ListStatusRetback != null)
@@ -1171,9 +1182,7 @@ namespace InstructionServer
                         {
                             _EBMConfigureGlobal.ListStatusRetback.Remove(tmp);
                         }
-
                     }
-
                 }
                 else
                 {
@@ -1206,9 +1215,7 @@ namespace InstructionServer
                         {
                             _EBMConfigureGlobal.ListSoftwareUpGrade.Remove(tmp);
                         }
-
                     }
-
                 }
                 else
                 {
@@ -1254,7 +1261,6 @@ namespace InstructionServer
                 }
                 else
                 {
-
                     _EBMConfigureGlobal.ListRdsConfig = new List<RdsConfig_>();
                 }
                 //增新项
@@ -1345,17 +1351,35 @@ namespace InstructionServer
                 case "5":
                     lock (Gtoken)
                     {
-                        if (_EBMConfigureGlobal.ListReback != null)
+                        if (SingletonInfo.GetInstance().IsGXProtocol)
                         {
-                            if (DelItemList.Count > 0)
+                            if (_EBMConfigureGlobal.ListReback != null)
                             {
-                                foreach (string item in DelItemList)
+                                if (DelItemList.Count > 0)
                                 {
-                                    Reback_ tmp = _EBMConfigureGlobal.ListReback.Find(s => s.ItemID.Equals(item));
-                                    _EBMConfigureGlobal.ListReback.Remove(tmp);
+                                    foreach (string item in DelItemList)
+                                    {
+                                        Reback_ tmp = _EBMConfigureGlobal.ListReback.Find(s => s.ItemID.Equals(item));
+                                        _EBMConfigureGlobal.ListReback.Remove(tmp);
+                                    }
                                 }
                             }
                         }
+                        else
+                        {
+                            if (_EBMConfigureGlobal.ListReback_Nation != null)
+                            {
+                                if (DelItemList.Count > 0)
+                                {
+                                    foreach (string item in DelItemList)
+                                    {
+                                        Reback_Nation tmp = _EBMConfigureGlobal.ListReback_Nation.Find(s => s.ItemID.Equals(item));
+                                        _EBMConfigureGlobal.ListReback_Nation.Remove(tmp);
+                                    }
+                                }
+                            }
+                        }
+                     
 
                     }
                     break;
@@ -1478,7 +1502,6 @@ namespace InstructionServer
 
                     }
                     break;
-            
             }
             EbmStream.EB_Configure_Table = GetConfigureTable(ref EB_Configure_Table, false) ? EB_Configure_Table : null;
             UpdateDataTextNew((object)3);
@@ -2163,8 +2186,6 @@ namespace InstructionServer
         private BindingCollection<Configure> GetConfigureCollection(EBMConfigureGlobal_ _EBMConfigureGlobal)
         {
             BindingCollection<Configure> TotalConfig_List = new BindingCollection<Configure>();
-
-
             if (_EBMConfigureGlobal.ListTimeService!=null)
             {
                 foreach (var item in _EBMConfigureGlobal.ListTimeService)
@@ -2197,13 +2218,27 @@ namespace InstructionServer
                 }
             }
 
-            if (_EBMConfigureGlobal.ListReback!=null)
+            if (SingletonInfo.GetInstance().IsGXProtocol)
             {
-                foreach (var item in _EBMConfigureGlobal.ListReback)
+                if (_EBMConfigureGlobal.ListReback != null)
                 {
-                    TotalConfig_List.Add(item);
+                    foreach (var item in _EBMConfigureGlobal.ListReback)
+                    {
+                        TotalConfig_List.Add(item);
+                    }
                 }
             }
+            else
+            {
+                if (_EBMConfigureGlobal.ListReback_Nation != null)
+                {
+                    foreach (var item in _EBMConfigureGlobal.ListReback_Nation)
+                    {
+                        TotalConfig_List.Add(item);
+                    }
+                }
+            }
+         
 
             if (_EBMConfigureGlobal.ListDefaltVolume!=null)
             {
@@ -2403,7 +2438,18 @@ namespace InstructionServer
                               
                                 break;
                             case Utils.ComboBoxHelper.ConfigureRebackTag:
+
+                            #region 注意这里需要特殊处理  201901014
+                            if (SingletonInfo.GetInstance().IsGXProtocol)
+                            {
                                 cmd.Add((d as Reback_).Configure.GetCmd());
+                            }
+                            else
+                            {
+                                cmd.Add((d as Reback_Nation).Configure.GetCmd());
+                            }
+                            #endregion
+                          
                                 break;
                             case Utils.ComboBoxHelper.ConfigureDefaltVolumeTag:
 
@@ -2529,7 +2575,15 @@ namespace InstructionServer
                 _EBMConfigureGlobal.ListDefaltVolume = JsonConvert.DeserializeObject<List<DefaltVolume_>>(joConfigure["2"].ToString());
                 _EBMConfigureGlobal.ListMainFrequency = JsonConvert.DeserializeObject<List<MainFrequency_>>(joConfigure["3"].ToString());
                 _EBMConfigureGlobal.ListRdsConfig = JsonConvert.DeserializeObject<List<RdsConfig_>>(joConfigure["4"].ToString());
-                _EBMConfigureGlobal.ListReback = JsonConvert.DeserializeObject<List<Reback_>>(joConfigure["5"].ToString());
+                if (SingletonInfo.GetInstance().IsGXProtocol)
+                {
+                    _EBMConfigureGlobal.ListReback = JsonConvert.DeserializeObject<List<Reback_>>(joConfigure["5"].ToString());
+                }
+                else
+                {
+                    _EBMConfigureGlobal.ListReback_Nation = JsonConvert.DeserializeObject<List<Reback_Nation>>(joConfigure["5"].ToString());
+                }
+                
                 _EBMConfigureGlobal.ListRebackPeriod = JsonConvert.DeserializeObject<List<RebackPeriod_>>(joConfigure["6"].ToString());
                 _EBMConfigureGlobal.ListSetAddress = JsonConvert.DeserializeObject<List<SetAddress_>>(joConfigure["7"].ToString());
                 _EBMConfigureGlobal.ListSoftwareUpGrade = JsonConvert.DeserializeObject<List<SoftwareUpGrade_>>(joConfigure["8"].ToString());
@@ -2546,7 +2600,15 @@ namespace InstructionServer
                 _EBMConfigureGlobal.ListDefaltVolume = new List<DefaltVolume_>();
                 _EBMConfigureGlobal.ListMainFrequency = new List<MainFrequency_>();
                 _EBMConfigureGlobal.ListRdsConfig = new List<RdsConfig_>();
-                _EBMConfigureGlobal.ListReback = new List<Reback_>();
+                if (SingletonInfo.GetInstance().IsGXProtocol)
+                {
+                    _EBMConfigureGlobal.ListReback = new List<Reback_>();
+                }
+                else
+                {
+                    _EBMConfigureGlobal.ListReback_Nation = new List<Reback_Nation>();
+                }
+              
                 _EBMConfigureGlobal.ListRebackPeriod = new List<RebackPeriod_>();
                 _EBMConfigureGlobal.ListSetAddress = new List<SetAddress_>();
                 _EBMConfigureGlobal.ListSoftwareUpGrade = new List<SoftwareUpGrade_>();
@@ -2777,7 +2839,6 @@ namespace InstructionServer
 
                 LogMessage(Color.Black, sb.ToString());
             }
-
         }
 
         private void EB_CertAuthScreenPrint()

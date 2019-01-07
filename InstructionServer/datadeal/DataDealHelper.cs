@@ -359,11 +359,28 @@ namespace InstructionServer
 
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                foreach (WorkMode_ item in listWM)
+
+                                for (int i = 0; i < listWM.Count; i++)
                                 {
-                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    for (int j = 0; j < listWM[i].Configure.list_Terminal_Address.Count; j++)
                                     {
-                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                        if (listWM[i].Configure.list_Terminal_Address[j].Length == 12)
+                                        {
+                                            listWM[i].Configure.list_Terminal_Address[j] = "F6" + listWM[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                for (int i = 0; i < listWM.Count; i++)
+                                {
+                                    for (int j = 0; j < listWM[i].Configure.list_Terminal_Address.Count; j++)
+                                    {
+                                        if (listWM[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listWM[i].Configure.list_Terminal_Address[j] = "0612" + listWM[i].Configure.list_Terminal_Address[j] + "00";
+                                        }
                                     }
                                 }
                             }
@@ -375,11 +392,28 @@ namespace InstructionServer
                             List<MainFrequency_> listMF = Serializer.Deserialize<List<MainFrequency_>>(data);
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                foreach (MainFrequency_ item in listMF)
+
+                                for (int i = 0; i < listMF.Count; i++)
                                 {
-                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    for (int j = 0; j < listMF[i].Configure.list_Terminal_Address.Count; j++)
                                     {
-                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                        if (listMF[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listMF[i].Configure.list_Terminal_Address[j] = "F6" + listMF[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                for (int i = 0; i < listMF.Count; i++)
+                                {
+                                    for (int j = 0; j < listMF[i].Configure.list_Terminal_Address.Count; j++)
+                                    {
+                                        if (listMF[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listMF[i].Configure.list_Terminal_Address[j] = "0612" + listMF[i].Configure.list_Terminal_Address[j] + "00";
+                                        }
                                     }
                                 }
                             }
@@ -392,31 +426,66 @@ namespace InstructionServer
 
                             string tmp1 = data.Replace("\"S_reback_address_backup\":,", "\"S_reback_address_backup\":\"null\",");
                             string tmp2 = tmp1.Replace("\"I_reback_port_Backup\":,", "\"I_reback_port_Backup\":0,");
-                            List<Reback_> listRB = Serializer.Deserialize<List<Reback_>>(tmp2);
+                           
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                foreach (Reback_ item in listRB)
+                                List<Reback_Nation> listRB = Serializer.Deserialize<List<Reback_Nation>>(tmp2);
+                                for (int i = 0; i < listRB.Count; i++)
                                 {
-                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    for (int j = 0; j < listRB[i].Configure.list_Terminal_Address.Count; j++)
                                     {
-                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                        if (listRB[i].Configure.list_Terminal_Address[j].Length == 12)
+                                        {
+                                            listRB[i].Configure.list_Terminal_Address[j] = "F6" + listRB[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                        }
                                     }
                                 }
+                                op.Data = listRB;
                             }
-                            op.Data = listRB;
+                            else
+                            {
+                                List<Reback_> listRB = Serializer.Deserialize<List<Reback_>>(tmp2);
+                                for (int i = 0; i < listRB.Count; i++)
+                                {
+                                    for (int j = 0; j < listRB[i].Configure.list_Terminal_Address.Count; j++)
+                                    {
+                                        if (listRB[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listRB[i].Configure.list_Terminal_Address[j] = "0612" + listRB[i].Configure.list_Terminal_Address[j] + "00";
+                                        }
+                                    }
+                                }
+                                op.Data = listRB;
+                            }
+                          
                             break;
                         case "6"://默认音量设置
                             JsonstructureDeal(ref data);
                             List<DefaltVolume_> listDV = Serializer.Deserialize<List<DefaltVolume_>>(data);
-
-
+                            
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                foreach (DefaltVolume_ item in listDV)
+                                for (int i = 0; i < listDV.Count; i++)
                                 {
-                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    for (int j = 0; j < listDV[i].Configure.list_Terminal_Address.Count; j++)
                                     {
-                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                        if (listDV[i].Configure.list_Terminal_Address[j].Length == 12)
+                                        {
+                                            listDV[i].Configure.list_Terminal_Address[j] = "F6" + listDV[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                for (int i = 0; i < listDV.Count; i++)
+                                {
+                                    for (int j = 0; j < listDV[i].Configure.list_Terminal_Address.Count; j++)
+                                    {
+                                        if (listDV[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listDV[i].Configure.list_Terminal_Address[j] = "0612" + listDV[i].Configure.list_Terminal_Address[j] + "00";
+                                        }
                                     }
                                 }
                             }
@@ -428,11 +497,28 @@ namespace InstructionServer
                             List<RebackPeriod_> listRP = Serializer.Deserialize<List<RebackPeriod_>>(data);
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                foreach (RebackPeriod_ item in listRP)
+
+                                for (int i = 0; i < listRP.Count; i++)
                                 {
-                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    for (int j = 0; j < listRP[i].Configure.list_Terminal_Address.Count; j++)
                                     {
-                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                        if (listRP[i].Configure.list_Terminal_Address[j].Length == 12)
+                                        {
+                                            listRP[i].Configure.list_Terminal_Address[j] = "F6" + listRP[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                for (int i = 0; i < listRP.Count; i++)
+                                {
+                                    for (int j = 0; j < listRP[i].Configure.list_Terminal_Address.Count; j++)
+                                    {
+                                        if (listRP[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listRP[i].Configure.list_Terminal_Address[j] = "0612" + listRP[i].Configure.list_Terminal_Address[j] + "00";
+                                        }
                                     }
                                 }
                             }
@@ -445,11 +531,27 @@ namespace InstructionServer
 
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                foreach (ContentMoniterRetback_ item in listCMR)
+                                for (int i = 0; i < listCMR.Count; i++)
                                 {
-                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    for (int j = 0; j < listCMR[i].Configure.list_Terminal_Address.Count; j++)
                                     {
-                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                        if (listCMR[i].Configure.list_Terminal_Address[j].Length == 12)
+                                        {
+                                            listCMR[i].Configure.list_Terminal_Address[j] = "F6" + listCMR[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                for (int i = 0; i < listCMR.Count; i++)
+                                {
+                                    for (int j = 0; j < listCMR[i].Configure.list_Terminal_Address.Count; j++)
+                                    {
+                                        if (listCMR[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listCMR[i].Configure.list_Terminal_Address[j] = "0612" + listCMR[i].Configure.list_Terminal_Address[j] + "00";
+                                        }
                                     }
                                 }
                             }
@@ -458,41 +560,65 @@ namespace InstructionServer
                             break;
                         case "105"://启动内容监测实时监听指令
                             JsonstructureDeal(ref data);
-                            if (SingletonInfo.GetInstance().IsGXProtocol)
-                            {
-                                List<ContentRealMoniterGX_> listCRMGX = Serializer.Deserialize<List<ContentRealMoniterGX_>>(data);
-                                op.Data = listCRMGX;
-                            }
-                            else
+                            if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
                                 List<ContentRealMoniter_> listCRM = Serializer.Deserialize<List<ContentRealMoniter_>>(data);
 
-                                
-                                    foreach (ContentRealMoniter_ item in listCRM)
+                                for (int i = 0; i < listCRM.Count; i++)
+                                {
+                                    for (int j = 0; j < listCRM[i].Configure.list_Terminal_Address.Count; j++)
                                     {
-                                        for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                        if (listCRM[i].Configure.list_Terminal_Address[j].Length==12)
                                         {
-                                            item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                            listCRM[i].Configure.list_Terminal_Address[j] = "F6" + listCRM[i].Configure.list_Terminal_Address[j] + "0314000000";
                                         }
                                     }
-                                
-
+                                }
                                 op.Data = listCRM;
+                            }
+                            else
+                            {
+                                List<ContentRealMoniterGX_> listCRMGX = Serializer.Deserialize<List<ContentRealMoniterGX_>>(data);
+                                for (int i = 0; i < listCRMGX.Count; i++)
+                                {
+                                    for (int j = 0; j < listCRMGX[i].Configure.list_Terminal_Address.Count; j++)
+                                    {
+                                        if (listCRMGX[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listCRMGX[i].Configure.list_Terminal_Address[j] = "0612" + listCRMGX[i].Configure.list_Terminal_Address[j] + "00";
+                                        }
+                                    }
+                                }
+                                op.Data = listCRMGX;
                             }
                             break;
                         case "106"://终端工作状态查询
                             JsonstructureDeal(ref data);
-
-                              // data.IndexOf(',')
                             List<StatusRetback_> listSR = Serializer.Deserialize<List<StatusRetback_>>(data);
 
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                foreach (StatusRetback_ item in listSR)
+                                for (int i = 0; i < listSR.Count; i++)
                                 {
-                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    for (int j = 0; j < listSR[i].Configure.list_Terminal_Address.Count; j++)
                                     {
-                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                        if (listSR[i].Configure.list_Terminal_Address[j].Length == 12)
+                                        {
+                                            listSR[i].Configure.list_Terminal_Address[j] = "F6" + listSR[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                for (int i = 0; i < listSR.Count; i++)
+                                {
+                                    for (int j = 0; j < listSR[i].Configure.list_Terminal_Address.Count; j++)
+                                    {
+                                        if (listSR[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listSR[i].Configure.list_Terminal_Address[j] = "0612" + listSR[i].Configure.list_Terminal_Address[j] + "00";
+                                        }
                                     }
                                 }
                             }
@@ -505,11 +631,28 @@ namespace InstructionServer
 
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                foreach (SoftwareUpGrade_ item in listSUG)
+
+                                for (int i = 0; i < listSUG.Count; i++)
                                 {
-                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    for (int j = 0; j < listSUG[i].Configure.list_Terminal_Address.Count; j++)
                                     {
-                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                        if (listSUG[i].Configure.list_Terminal_Address[j].Length == 12)
+                                        {
+                                            listSUG[i].Configure.list_Terminal_Address[j] = "F6" + listSUG[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                for (int i = 0; i < listSUG.Count; i++)
+                                {
+                                    for (int j = 0; j < listSUG[i].Configure.list_Terminal_Address.Count; j++)
+                                    {
+                                        if (listSUG[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listSUG[i].Configure.list_Terminal_Address[j] = "0612" + listSUG[i].Configure.list_Terminal_Address[j] + "00";
+                                        }
                                     }
                                 }
                             }
@@ -536,11 +679,27 @@ namespace InstructionServer
 
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                foreach (RdsConfig_ item in listRC)
+                                for (int i = 0; i < listRC.Count; i++)
                                 {
-                                    for (int i = 0; i < item.Configure.list_Terminal_Address.Count; i++)
+                                    for (int j = 0; j < listRC[i].Configure.list_Terminal_Address.Count; j++)
                                     {
-                                        item.Configure.list_Terminal_Address[i] = "F6" + item.Configure.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+                                        if (listRC[i].Configure.list_Terminal_Address[j].Length == 12)
+                                        {
+                                            listRC[i].Configure.list_Terminal_Address[j] = "F6" + listRC[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                for (int i = 0; i < listRC.Count; i++)
+                                {
+                                    for (int j = 0; j < listRC[i].Configure.list_Terminal_Address.Count; j++)
+                                    {
+                                        if (listRC[i].Configure.list_Terminal_Address[j].Length==12)
+                                        {
+                                            listRC[i].Configure.list_Terminal_Address[j] = "0612" + listRC[i].Configure.list_Terminal_Address[j] + "00";
+                                        }
                                     }
                                 }
                             }

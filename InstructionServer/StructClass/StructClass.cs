@@ -262,6 +262,8 @@ namespace InstructionServer
 
         public List<Reback_> ListReback { get; set; }
 
+        public List<Reback_Nation> ListReback_Nation { get; set; }
+
         public List<DefaltVolume_> ListDefaltVolume { get; set; }
 
         public List<RebackPeriod_> ListRebackPeriod { get; set; }
@@ -412,27 +414,24 @@ namespace InstructionServer
    
     }
 
+    /// <summary>
+    /// 广西版的回传参数设置
+    /// </summary>
     public class Reback_ : Configure
     {
         public string ItemID { get; set; }
         public override byte B_Daily_cmd_tag { get { return Utils.ComboBoxHelper.ConfigureRebackTag; } }
         public EBConfigureRebackGX Configure { get; set; }
-        //public byte B_Address_type
-        //{
-        //    get { return Configure.B_Address_type; }
-        //    set { Configure.B_Address_type = value; }
-        //}
-        //public byte B_reback_type
-        //{
-        //    get { return Configure.B_reback_type; }
-        //    set { Configure.B_reback_type = value; }
-        //}
-        //public string S_reback_address
-        //{
-        //    get { return Configure.S_reback_address; }
-        //    set { Configure.S_reback_address = value; }
-        //}
-   
+    }
+
+    /// <summary>
+    /// 国标版的回传参数设置
+    /// </summary>
+    public class Reback_Nation : Configure
+    {
+        public string ItemID { get; set; }
+        public override byte B_Daily_cmd_tag { get { return Utils.ComboBoxHelper.ConfigureRebackTag; } }
+        public EBConfigureReback Configure { get; set; }
     }
 
     public class DefaltVolume_ : Configure
