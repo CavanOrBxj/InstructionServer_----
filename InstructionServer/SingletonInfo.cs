@@ -87,9 +87,5 @@ namespace InstructionServer
             }
             return _singleton;
         }
-
-
-
-
     }
 }
