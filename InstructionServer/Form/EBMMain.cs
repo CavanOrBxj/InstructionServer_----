@@ -397,7 +397,8 @@ namespace InstructionServer
                         string[] resource_code = modify.Data.Split(',');
                         foreach (string item in resource_code)
                         {
-                            tmp.List_EBM_resource_code.Add(item);
+                          //  tmp.List_EBM_resource_code.Add(item);  注释于20190225
+                            tmp.List_EBM_resource_code.Remove(item);
                         }
                     }
                 }

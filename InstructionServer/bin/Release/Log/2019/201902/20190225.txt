@@ -1,0 +1,424 @@
+
+ 
+记录时间：2019-02-25 11:24:26,536 
+线程ID:[12] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:24:29,255 
+线程ID:[12] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:25:05,048 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:26:13,955 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:26:51,309 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:27:19,462 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:27:19,479 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:28:12,462 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:28:57,039 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:29:49,056 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:30:11,969 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:30:39,181 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:31:59,477 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:31:59,495 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:34:28,484 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:35:26,075 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:36:15,989 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:37:13,891 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:37:28,495 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:37:28,512 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:40:37,059 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:41:17,006 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:42:11,022 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 11:44:51,519 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:11:05,187 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:11:33,090 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:11:51,082 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:13:41,600 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:22:17,221 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:22:46,129 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:22:49,855 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:23:37,632 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:24:03,360 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:47:26,306 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:49:03,219 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:50:06,717 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:50:53,289 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 13:51:46,224 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 14:02:27,866 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 14:02:55,744 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 14:03:39,322 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 14:04:09,287 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 14:06:02,776 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 14:06:03,148 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 14:06:03,149 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 17:40:46,039 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：InstructionServer.Program property: [(null)] - 
+错误描述：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 InstructionServer.IoServer.Start(Int32 port) 位置 D:\支持\TS指令服务\InstructionServer_----\InstructionServer\communicate\IoServer.cs:行号 335
+   在 InstructionServer.EBMMain.InitTCPServer() 位置 D:\支持\TS指令服务\InstructionServer_----\InstructionServer\Form\EBMMain.cs:行号 193
+   在 InstructionServer.EBMMain.EBMMain_Load(Object sender, EventArgs e) 位置 D:\支持\TS指令服务\InstructionServer_----\InstructionServer\Form\EBMMain.cs:行号 270
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+ 
+
+ 
+记录时间：2019-02-25 17:45:33,371 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：InstructionServer.Program property: [(null)] - 
+错误描述：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 InstructionServer.IoServer.Start(Int32 port) 位置 D:\支持\TS指令服务\InstructionServer_----\InstructionServer\communicate\IoServer.cs:行号 335
+   在 InstructionServer.EBMMain.InitTCPServer() 位置 D:\支持\TS指令服务\InstructionServer_----\InstructionServer\Form\EBMMain.cs:行号 193
+   在 InstructionServer.EBMMain.EBMMain_Load(Object sender, EventArgs e) 位置 D:\支持\TS指令服务\InstructionServer_----\InstructionServer\Form\EBMMain.cs:行号 270
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+ 
+
+ 
+记录时间：2019-02-25 17:48:06,785 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
+
+ 
+记录时间：2019-02-25 17:48:33,705 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：InstructionServer.EBMMain property: [(null)] - 
+错误描述：收到MQ指令！
+ 
