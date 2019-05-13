@@ -4,6 +4,7 @@ using EBMTable;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Data;
@@ -43,6 +44,7 @@ namespace InstructionServer
                     AnalysisCertAuthData(MsgMap);
                     break;
                 case "2":
+                    //注意：2019.4月份后加入国标版TS指令  日常开停播也是接入这个接口 然后下面接口处理
                     AnalysisEBMIndexData(MsgMap);
                     break;
                 case "3":
@@ -136,14 +138,7 @@ namespace InstructionServer
                     tmp.S_EBM_type = map["S_EBM_type"].ToString();
                     if (!SingletonInfo.GetInstance().IsGXProtocol)
                     {
-                        if (map["S_EBM_class"].ToString() == "0005")
-                        {
-                            tmp.S_EBM_class = "0004";
-                        }
-                        else
-                        {
-                            tmp.S_EBM_class = map["S_EBM_class"].ToString();
-                        }
+                        tmp.S_EBM_class = map["S_EBM_class"].ToString();//20190411修改
                         tmp.S_EBM_id = "F" + BBSHelper.CreateEBM_ID(); 
                     }
                     else
@@ -151,7 +146,6 @@ namespace InstructionServer
                         tmp.S_EBM_class = map["S_EBM_class"].ToString();
                         tmp.S_EBM_id = map["S_EBM_id"].ToString().Substring(0, 30);
                     }
-                   // tmp.S_EBM_class = map["S_EBM_class"].ToString();
                     tmp.S_EBM_level = map["S_EBM_level"].ToString();
                     tmp.List_EBM_resource_code = map["List_EBM_resource_code"].ToString();
                   
@@ -241,7 +235,8 @@ namespace InstructionServer
                           
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
-                                item.B_stream_type = "00";
+                                //item.B_stream_type = "00";//20190420  原来值
+                                item.B_stream_type = "03";//修改于20190420  工信对接  
                             }
                             else
                             {
@@ -254,7 +249,112 @@ namespace InstructionServer
                         tmp.List_ProgramStreamInfo = objs;
 
                     }
-                    op.Data = (object)tmp;
+
+
+
+                    if (SingletonInfo.GetInstance().IsGXProtocol)
+                    {
+                        op.Data = (object)tmp;
+                    }
+                    else
+                    {
+                        if (tmp.S_EBM_class == "0005")
+                        {
+                            op.OperatorType = "AddDailyBroadcast";
+                            ChangeProgram_ pp = new ChangeProgram_();
+
+                            pp.Program = new DailyCmdChangeProgram();
+                            pp.ItemID = tmp.IndexItemID;
+                            pp.Program.NetID = (short)0;
+                            pp.Program.TSID = (short)0;
+                            pp.Program.ServiceID = (short)0;
+                            pp.Program.PCR_PID = 0;
+                            if (tmp.BL_details_channel_indicate == "true")
+                            {
+
+                                List<ProgramStreamInfotmp> List_ProgramStreamInfotmp = new List<ProgramStreamInfotmp>();//S_elementary_PID 中有“，”时，临时加入项
+                                int List_ProgramStreamInfoLength = tmp.List_ProgramStreamInfo.Count;//详情频道节目流信息列表长度
+                                for (int i = 0; i < List_ProgramStreamInfoLength; i++)
+                                {
+                                    string S_elementary_PID = tmp.List_ProgramStreamInfo[i].S_elementary_PID;
+
+                                    if (S_elementary_PID.Contains(","))
+                                    {
+                                        string[] pidarray = S_elementary_PID.Split(',');
+                                        pp.Program.Program_PID = (short)Convert.ToInt32(pidarray[0]);
+                                        pp.Program.Stream_Type = 0x03;
+                                    }
+                                    else
+                                    {
+                                        //string[] pidarray = S_elementary_PID.Split(',');
+                                        pp.Program.Program_PID = (short)Convert.ToInt32(S_elementary_PID);
+                                        pp.Program.Stream_Type = 0x03;
+                                    }
+                                }
+                            }
+
+
+
+                            pp.Program.Priority = (short)0;
+                            pp.Program.Volume = (short)255;
+
+
+
+                            DateTime dd = Convert.ToDateTime(tmp.S_EBM_end_time);
+                            pp.Program.EndTime = dd;
+
+
+                            pp.Program.B_Address_type = (byte)1;
+
+
+
+                            string[] List_EBM_resource_codeArray = tmp.List_EBM_resource_code.Split(',');
+
+                            for (int i = 0; i < List_EBM_resource_codeArray.Length; i++)
+                            {
+                                int resource_code_length = List_EBM_resource_codeArray[i].Length;
+
+
+                                //20180525 陈良要求修改特殊处理
+                                switch (resource_code_length)
+                                {
+                                    case 18:
+                                        break;
+                                    case 23:
+
+                                        if (SingletonInfo.GetInstance().IsGXProtocol)
+                                        {
+                                            string tt = List_EBM_resource_codeArray[i].Substring(1);
+                                            string tt1 = tt.Substring(0, tt.Length - 4);
+                                            List_EBM_resource_codeArray[i] = tt1;
+                                        }
+                                        
+                                        break;
+                                    case 12:
+                                        if (SingletonInfo.GetInstance().IsGXProtocol)
+                                        {
+                                            List_EBM_resource_codeArray[i] = "0612" + List_EBM_resource_codeArray[i] + "00";
+                                        }
+                                        else
+                                        {
+                                            List_EBM_resource_codeArray[i] = "6" + List_EBM_resource_codeArray[i] + "0314000000";
+                                        }
+
+                                        break;
+                                }
+                            }
+                            pp.Program.list_Terminal_Address = new List<string>(List_EBM_resource_codeArray);
+                            pp.Program.S_cmd_id = "F" + BBSHelper.CreateEBM_ID();
+                            List<ChangeProgram_> listCP = new List<ChangeProgram_>();
+                            listCP.Add(pp);
+                            op.ModuleType = "1";
+                            op.Data = listCP;
+                        }
+                        else
+                        {
+                            op.Data = (object)tmp;
+                        }
+                    }
                     DataDealHelper.MyEvent(op);
                     break;
                 case "AddAreaEBMIndex":
@@ -266,7 +366,31 @@ namespace InstructionServer
                     DataDealHelper.MyEvent(op);
                     break;
                 case "DelEBMIndex":
-                    op.Data = map["IndexItemID"].ToString();
+                    if (SingletonInfo.GetInstance().IsGXProtocol)
+                    {
+                        op.Data = map["IndexItemID"].ToString().Split('~')[0];
+                    }
+                    else
+                    {
+                        //国标协议
+
+                        string[] str = map["IndexItemID"].ToString().Split('~');
+                        string IndexItemIDstr = str[0] ;
+
+                        string broadcasttype = str[1];
+                        if (broadcasttype == "0005")
+                        {
+                            //日常
+                            op.ModuleType = "2";
+                            op.OperatorType = "DelDailyBroadcast";
+                            op.Data = IndexItemIDstr;
+                        }
+                        else
+                        {
+                            //应急  还是走索引表
+                            op.Data = IndexItemIDstr;
+                        }
+                    }
                     DataDealHelper.MyEvent(op);
                     break;
             }
@@ -366,7 +490,7 @@ namespace InstructionServer
                                     {
                                         if (listWM[i].Configure.list_Terminal_Address[j].Length == 12)
                                         {
-                                            listWM[i].Configure.list_Terminal_Address[j] = "F6" + listWM[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                            listWM[i].Configure.list_Terminal_Address[j] = "6" + listWM[i].Configure.list_Terminal_Address[j] + "0314000000";
                                         }
                                     }
                                 }
@@ -399,7 +523,7 @@ namespace InstructionServer
                                     {
                                         if (listMF[i].Configure.list_Terminal_Address[j].Length==12)
                                         {
-                                            listMF[i].Configure.list_Terminal_Address[j] = "F6" + listMF[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                            listMF[i].Configure.list_Terminal_Address[j] = "6" + listMF[i].Configure.list_Terminal_Address[j] + "0314000000";
                                         }
                                     }
                                 }
@@ -430,15 +554,26 @@ namespace InstructionServer
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
                                 List<Reback_Nation> listRB = Serializer.Deserialize<List<Reback_Nation>>(tmp2);
+
+
+                                int lo1 = tmp2.IndexOf("I_reback_port") + 14;
+                                int lo2 = tmp2.IndexOf("I_reback_port_Backup") - 3;
+                                int cha = lo2 - lo1;
+
+                                string port = tmp2.Substring(lo1 + 1, cha);
+
+                              
                                 for (int i = 0; i < listRB.Count; i++)
                                 {
                                     for (int j = 0; j < listRB[i].Configure.list_Terminal_Address.Count; j++)
                                     {
                                         if (listRB[i].Configure.list_Terminal_Address[j].Length == 12)
                                         {
-                                            listRB[i].Configure.list_Terminal_Address[j] = "F6" + listRB[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                            listRB[i].Configure.list_Terminal_Address[j] = "6" + listRB[i].Configure.list_Terminal_Address[j] + "0314000000";
                                         }
                                     }
+
+                                    listRB[i].Configure.S_reback_address += ":"+port;
                                 }
                                 op.Data = listRB;
                             }
@@ -471,7 +606,7 @@ namespace InstructionServer
                                     {
                                         if (listDV[i].Configure.list_Terminal_Address[j].Length == 12)
                                         {
-                                            listDV[i].Configure.list_Terminal_Address[j] = "F6" + listDV[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                            listDV[i].Configure.list_Terminal_Address[j] = "6" + listDV[i].Configure.list_Terminal_Address[j] + "0314000000";
                                         }
                                     }
                                 }
@@ -504,7 +639,7 @@ namespace InstructionServer
                                     {
                                         if (listRP[i].Configure.list_Terminal_Address[j].Length == 12)
                                         {
-                                            listRP[i].Configure.list_Terminal_Address[j] = "F6" + listRP[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                            listRP[i].Configure.list_Terminal_Address[j] = "6" + listRP[i].Configure.list_Terminal_Address[j] + "0314000000";
                                         }
                                     }
                                 }
@@ -537,7 +672,7 @@ namespace InstructionServer
                                     {
                                         if (listCMR[i].Configure.list_Terminal_Address[j].Length == 12)
                                         {
-                                            listCMR[i].Configure.list_Terminal_Address[j] = "F6" + listCMR[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                            listCMR[i].Configure.list_Terminal_Address[j] = "6" + listCMR[i].Configure.list_Terminal_Address[j] + "0314000000";
                                         }
                                     }
                                 }
@@ -560,41 +695,56 @@ namespace InstructionServer
                             break;
                         case "105"://启动内容监测实时监听指令
                             JsonstructureDeal(ref data);
-                            if (!SingletonInfo.GetInstance().IsGXProtocol)
-                            {
-                                List<ContentRealMoniter_> listCRM = Serializer.Deserialize<List<ContentRealMoniter_>>(data);
+                            //if (!SingletonInfo.GetInstance().IsGXProtocol)
+                            //{
+                            //    List<ContentRealMoniter_> listCRM = Serializer.Deserialize<List<ContentRealMoniter_>>(data);
 
-                                for (int i = 0; i < listCRM.Count; i++)
-                                {
-                                    for (int j = 0; j < listCRM[i].Configure.list_Terminal_Address.Count; j++)
-                                    {
-                                        if (listCRM[i].Configure.list_Terminal_Address[j].Length==12)
-                                        {
-                                            listCRM[i].Configure.list_Terminal_Address[j] = "F6" + listCRM[i].Configure.list_Terminal_Address[j] + "0314000000";
-                                        }
-                                    }
-                                }
-                                op.Data = listCRM;
-                            }
-                            else
+                            //    for (int i = 0; i < listCRM.Count; i++)
+                            //    {
+                            //        for (int j = 0; j < listCRM[i].Configure.list_Terminal_Address.Count; j++)
+                            //        {
+                            //            if (listCRM[i].Configure.list_Terminal_Address[j].Length==12)
+                            //            {
+                            //                listCRM[i].Configure.list_Terminal_Address[j] = "6" + listCRM[i].Configure.list_Terminal_Address[j] + "0314000000";
+                            //            }
+                            //        }
+                            //    }
+                            //    op.Data = listCRM;
+                            //}
+                            //else
+                            //{
+                            //    List<ContentRealMoniterGX_> listCRMGX = Serializer.Deserialize<List<ContentRealMoniterGX_>>(data);
+                            //    for (int i = 0; i < listCRMGX.Count; i++)
+                            //    {
+                            //        for (int j = 0; j < listCRMGX[i].Configure.list_Terminal_Address.Count; j++)
+                            //        {
+                            //            if (listCRMGX[i].Configure.list_Terminal_Address[j].Length==12)
+                            //            {
+                            //                listCRMGX[i].Configure.list_Terminal_Address[j] = "0612" + listCRMGX[i].Configure.list_Terminal_Address[j] + "00";
+                            //            }
+                            //        }
+                            //    }
+                            //    op.Data = listCRMGX;
+                            //}
+
+                            //国标版本的实时监听用的广西协议  20190413
+                            List<ContentRealMoniterGX_> listCRMGX = Serializer.Deserialize<List<ContentRealMoniterGX_>>(data);
+                            for (int i = 0; i < listCRMGX.Count; i++)
                             {
-                                List<ContentRealMoniterGX_> listCRMGX = Serializer.Deserialize<List<ContentRealMoniterGX_>>(data);
-                                for (int i = 0; i < listCRMGX.Count; i++)
+                                for (int j = 0; j < listCRMGX[i].Configure.list_Terminal_Address.Count; j++)
                                 {
-                                    for (int j = 0; j < listCRMGX[i].Configure.list_Terminal_Address.Count; j++)
+                                    if (listCRMGX[i].Configure.list_Terminal_Address[j].Length == 12)
                                     {
-                                        if (listCRMGX[i].Configure.list_Terminal_Address[j].Length==12)
-                                        {
-                                            listCRMGX[i].Configure.list_Terminal_Address[j] = "0612" + listCRMGX[i].Configure.list_Terminal_Address[j] + "00";
-                                        }
+                                        //   listCRMGX[i].Configure.list_Terminal_Address[j] = "F6" + listCRMGX[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                        listCRMGX[i].Configure.list_Terminal_Address[j] = "6" + listCRMGX[i].Configure.list_Terminal_Address[j] + "0314000000";
                                     }
                                 }
-                                op.Data = listCRMGX;
                             }
+                            op.Data = listCRMGX;
                             break;
                         case "106"://终端工作状态查询
                             JsonstructureDeal(ref data);
-                            List<StatusRetback_> listSR = Serializer.Deserialize<List<StatusRetback_>>(data);
+                            List<StatusRetbackGX_> listSR = Serializer.Deserialize<List<StatusRetbackGX_>>(data);//貌似广西没有这个功能
 
                             if (!SingletonInfo.GetInstance().IsGXProtocol)
                             {
@@ -604,7 +754,7 @@ namespace InstructionServer
                                     {
                                         if (listSR[i].Configure.list_Terminal_Address[j].Length == 12)
                                         {
-                                            listSR[i].Configure.list_Terminal_Address[j] = "F6" + listSR[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                            listSR[i].Configure.list_Terminal_Address[j] = "6" + listSR[i].Configure.list_Terminal_Address[j] + "0314000000";
                                         }
                                     }
                                 }
@@ -638,7 +788,7 @@ namespace InstructionServer
                                     {
                                         if (listSUG[i].Configure.list_Terminal_Address[j].Length == 12)
                                         {
-                                            listSUG[i].Configure.list_Terminal_Address[j] = "F6" + listSUG[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                            listSUG[i].Configure.list_Terminal_Address[j] = "6" + listSUG[i].Configure.list_Terminal_Address[j] + "0314000000";
                                         }
                                     }
                                 }
@@ -660,7 +810,82 @@ namespace InstructionServer
 
                             op.Data = listSUG;
                             break;
-                        case "8"://RDS配置
+
+                        case "300":
+                            //国标 终端状态查询指令
+
+                            JsonstructureDeal(ref data);
+                            //又要特殊处理
+
+                            string tmp3 = data.Replace("\"S_reback_address_backup\":,", "\"S_reback_address_backup\":\"null\",");
+                            string tmp4 = tmp3.Replace("\"I_reback_port_Backup\":,", "\"I_reback_port_Backup\":0,");
+
+                            List<Reback_Nation_add> listRBa = Serializer.Deserialize<List<Reback_Nation_add>>(tmp4);
+                            for (int i = 0; i < listRBa.Count; i++)
+                            {
+                                for (int j = 0; j < listRBa[i].Configure.list_Terminal_Address.Count; j++)
+                                {
+                                    if (listRBa[i].Configure.list_Terminal_Address[j].Length == 12)
+                                    {
+                                        listRBa[i].Configure.list_Terminal_Address[j] = "6" + listRBa[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                    }
+                                }
+                            }
+                            // op.Data = listRB;
+                            listRBa[0].query_code_List = new List<string>();
+                            //string ppo = "[{"ItemID":3,"B_Daily_cmd_tag":300,"Configure":{"B_reback_type":2,"S_reback_address":"192.168.100.100","S_reback_address_backup":"","I_reback_port":7202,"I_reback_port_Backup":,"B_Address_type":1,"list_Terminal_Address":["532625000000"],"query_code":["01,02,03,04,05,06,07,08,09,0A,0B,0C,0D,0E,0F,10,11,12"]}}]";
+
+                            int local = data.IndexOf("query_code");
+                            string tmp22 = data.Substring(local + 14);
+                            string tmp33 = tmp22.Substring(0, tmp22.Length - 5);
+                            string[] query_codes = tmp33.Split(',');
+
+                            #region 必须要查物理码 
+                            bool exists = ((IList)query_codes).Contains("5");
+                            if (!exists)
+                            {
+                                listRBa[0].query_code_List.Add("5");
+                            }
+                            #endregion
+                            foreach (string item in query_codes)
+                            {
+                                listRBa[0].query_code_List.Add(item);
+                            }
+                            listRBa[0].query_code_List.Sort();
+
+
+
+                            List<StatusRetback_> listSRB = new List<StatusRetback_>();
+                            foreach (Reback_Nation_add item in listRBa)
+                            {
+                                StatusRetback_ sr = new StatusRetback_();
+                                sr.Configure = new EBConfigureStatusRetback();
+                                sr.Configure.B_Address_type = 0x01;
+                                sr.Configure.list_Parameter_tag = new List<byte>();
+
+
+                                List<byte> list_Parameter_tag_tmp = new List<byte>();
+                                foreach (string  ee in item.query_code_List)
+                                {
+                                    list_Parameter_tag_tmp.Add((byte)Convert.ToInt32(ee,16));
+                                }
+
+                                if (list_Parameter_tag_tmp.Count>18)
+                                {
+                                    list_Parameter_tag_tmp.RemoveAt(list_Parameter_tag_tmp.Count-1);
+                                }
+                                sr.Configure.list_Parameter_tag = list_Parameter_tag_tmp;
+                                sr.Configure.list_Terminal_Address = item.Configure.list_Terminal_Address;
+                                sr.ItemID = item.ItemID;
+
+                                listSRB.Add(sr);
+                            }
+                            op.ModuleType = "300";
+                            op.Data = listSRB;
+                            break;
+                    
+
+                case "8"://RDS配置
                            // JsonstructureDeal(ref data);
                               data=data.Substring(18,data.Length-18);  //特殊处理  刘工发送的json字符异常
                               List<RdsConfig_> listRC = Serializer.Deserialize<List<RdsConfig_>>(data);
@@ -685,7 +910,7 @@ namespace InstructionServer
                                     {
                                         if (listRC[i].Configure.list_Terminal_Address[j].Length == 12)
                                         {
-                                            listRC[i].Configure.list_Terminal_Address[j] = "F6" + listRC[i].Configure.list_Terminal_Address[j] + "0314000000";
+                                            listRC[i].Configure.list_Terminal_Address[j] = "6" + listRC[i].Configure.list_Terminal_Address[j] + "0314000000";
                                         }
                                     }
                                 }
@@ -860,7 +1085,12 @@ namespace InstructionServer
                                 {
                                     for (int i = 0; i < item.Program.list_Terminal_Address.Count; i++)
                                     {
-                                        item.Program.list_Terminal_Address[i] = "F6" + item.Program.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
+
+                                        if (item.Program.list_Terminal_Address[i].Length==23)
+                                        {
+                                            item.Program.list_Terminal_Address[i] = item.Program.list_Terminal_Address[i];
+                                        }
+                                      //  item.Program.list_Terminal_Address[i] = "F6" + item.Program.list_Terminal_Address[i].Substring(0, 12) + "0314000000";
                                     }
                                 }
                             }
@@ -1102,10 +1332,18 @@ namespace InstructionServer
             {
                 if (cert.SendState)
                 {
-                    if (cert.Tag == 1)
+                    //if (cert.Tag == 1)
+                    //{
+                    //    list.Add(Encoding.GetEncoding("GB2312").GetBytes(cert.Cert_data));
+                    //}
+                    List<byte> Cert_dataList = new List<byte>();
+                    string[] pp = cert.Cert_data.Trim().Split(' ');
+                    foreach (string item in pp)
                     {
-                        list.Add(Encoding.GetEncoding("GB2312").GetBytes(cert.Cert_data));
+                        Cert_dataList.Add((byte)Convert.ToInt32(item,16));
                     }
+
+                    list.Add(Cert_dataList.ToArray());
                 }
             }
             return list;
@@ -1144,10 +1382,19 @@ namespace InstructionServer
             {
                 if (cert.SendState)
                 {
-                    if (cert.Tag == 1)
+                    //if (cert.Tag == 1)
+                    //{
+                    //    list.Add(Encoding.GetEncoding("GB2312").GetBytes(cert.CertAuth_data));
+                    //}
+
+                    List<byte> dataList = new List<byte>();
+                    string[] pp = cert.CertAuth_data.Trim().Split(' ');
+                    foreach (string item in pp)
                     {
-                        list.Add(Encoding.GetEncoding("GB2312").GetBytes(cert.CertAuth_data));
+                        dataList.Add((byte)Convert.ToInt32(item, 16));
                     }
+
+                    list.Add(dataList.ToArray());
                 }
             }
             return list;

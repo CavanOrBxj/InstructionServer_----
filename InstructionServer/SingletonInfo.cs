@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using EBSignature;
 using System.Net;
+using System;
 
 namespace InstructionServer
 {
@@ -50,6 +51,20 @@ namespace InstructionServer
 
         public int TimerInterval;//定时器执行周期
 
+
+        public CertAuthGlobal_ _CertAuthGlobal;
+        public EBMIndexGlobal_ _EBMIndexGlobal;
+        public EBMConfigureGlobal_ _EBMConfigureGlobal;
+        public DailyBroadcastGlobal_ _DailyBroadcastGlobal;
+        public EBContentGlobal_ _EBContentGlobal;
+        
+        public bool SignatureType;//签名方式  true表示软签名  false表示硬件签名
+
+
+        public USBE usb;// = new USBE();
+        public IntPtr phDeviceHandle;// = (IntPtr)1;
+
+
         private SingletonInfo()                                                                 
         {
             scramblernum = 0;
@@ -60,6 +75,7 @@ namespace InstructionServer
             InlayCA=new EbmSignature();
             IsStartSend = false;
             cramblertype = "";
+
             OriginalNetworkId = 0;//是否需要保存？   20180328
 
             IsGXProtocol = false;
@@ -77,6 +93,18 @@ namespace InstructionServer
 
             tcpsend = new TcpHelper();
             TimerInterval = 0;
+
+
+            _CertAuthGlobal = new CertAuthGlobal_();
+            _EBMIndexGlobal = new EBMIndexGlobal_();
+            _EBMConfigureGlobal = new EBMConfigureGlobal_();
+            _DailyBroadcastGlobal = new DailyBroadcastGlobal_();
+            _EBContentGlobal = new EBContentGlobal_();
+
+            SignatureType = true;
+
+            usb = new USBE();
+            phDeviceHandle = (IntPtr)1;
         }
 
         public static SingletonInfo GetInstance()

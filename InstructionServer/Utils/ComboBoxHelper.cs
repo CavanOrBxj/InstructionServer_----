@@ -15,8 +15,11 @@ namespace InstructionServer.Utils
         public const byte ConfigureDefaltVolumeTag = 6;
         public const byte ConfigureRebackPeriodTag = 7;
         public const byte ConfigureContentMoniterRetbackTag = 104;
-        public const byte ConfigureContentRealMoniterTag = 105;
+        // public const byte ConfigureContentRealMoniterTag = 105;
+        public const byte ConfigureContentRealMoniterTag = 18;//修改于20190413
         public const byte ConfigureStatusRetbackTag = 106;
+
+        public const byte ConfigureStatusRetbackNationTag = 255;
         public const byte ConfigureSoftwareUpGradeTag = 240;
         public const byte ConfigureRdsConfigTag = 8;
         public const byte ConfigureStatusRetbackGXTag = 9;

@@ -71,8 +71,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\ControlAstro.dll</HintPath>
     </Reference>
-    <Reference Include="EBMTableLib, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="EBMTableLib">
       <HintPath>EBMTableLib\EBMTableLib.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
@@ -96,6 +95,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="communicate\USBPSW.cs" />
     <Compile Include="datadeal\BBSHelper.cs" />
     <Compile Include="datadeal\Calcle.cs" />
     <Compile Include="datadeal\ComboBind.cs" />
@@ -186,6 +186,7 @@
   <ItemGroup>
     <Content Include="Server.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

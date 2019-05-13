@@ -287,6 +287,8 @@ namespace InstructionServer
     {
         public List<ChangeProgram_> ListChangeProgram { get; set; }
 
+        public List<StopPorgram_> ListStopPorgram { get; set; }
+
         public List<PlayCtrl_> ListPlayCtrl { get; set; }
 
         public List<OutSwitch_> ListOutSwitch { get; set; }
@@ -563,7 +565,7 @@ namespace InstructionServer
     public class StatusRetback_ : Configure
     {
         public string ItemID { get; set; }
-        public override byte B_Daily_cmd_tag { get { return Utils.ComboBoxHelper.ConfigureStatusRetbackTag; } }
+        public override byte B_Daily_cmd_tag { get { return Utils.ComboBoxHelper.ConfigureStatusRetbackNationTag; } }
         public EBConfigureStatusRetback Configure { get; set; }
         //public byte B_Address_type
         //{
@@ -572,6 +574,30 @@ namespace InstructionServer
         //}
      
     }
+
+    public class StatusRetbackGX_ : Configure
+    {
+        public string ItemID { get; set; }
+        public override byte B_Daily_cmd_tag { get { return Utils.ComboBoxHelper.ConfigureStatusRetbackTag; } }
+        public EBConfigureStatusRetbackGX Configure { get; set; }
+        //public byte B_Address_type
+        //{
+        //    get { return Configure.B_Address_type; }
+        //    set { Configure.B_Address_type = value; }
+        //}
+
+    }
+
+
+    public class Reback_Nation_add : Configure
+    {
+        public string ItemID { get; set; }
+        public override byte B_Daily_cmd_tag { get { return Utils.ComboBoxHelper.ConfigureRebackTag; } }
+        public EBConfigureRebackGX Configure { get; set; }
+
+        public List<string> query_code_List { get; set; }
+    }
+
 
     public class SoftwareUpGrade_ : Configure
     {
